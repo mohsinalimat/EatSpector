@@ -17,6 +17,7 @@ The following **required** functionality is completed:
 - [ ] User can tap a restaurant and see its detail view
 - [ ] User can place an order using GrubHub
 - [ ] User can view restaurant location on google map
+- [ ] User can get directions using google map
 
 
 ## Video Walkthrough
