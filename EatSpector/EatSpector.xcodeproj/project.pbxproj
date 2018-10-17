@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0825E9AA2164673000994015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825E9A92164673000994015 /* AppDelegate.swift */; };
-		0825E9AC2164673000994015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825E9AB2164673000994015 /* ViewController.swift */; };
 		0825E9AF2164673000994015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0825E9AD2164673000994015 /* Main.storyboard */; };
 		0825E9B12164673100994015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0825E9B02164673100994015 /* Assets.xcassets */; };
 		0825E9B42164673100994015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0825E9B22164673100994015 /* LaunchScreen.storyboard */; };
 		0825E9BF2164673100994015 /* EatSpectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825E9BE2164673100994015 /* EatSpectorTests.swift */; };
 		0825E9CA2164673100994015 /* EatSpectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825E9C92164673100994015 /* EatSpectorUITests.swift */; };
+		08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB8422217702ED00EC8FEB /* SignUpViewController.swift */; };
+		08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB84242177032000EC8FEB /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		0825E9A62164673000994015 /* EatSpector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatSpector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0825E9A92164673000994015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0825E9AB2164673000994015 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0825E9AE2164673000994015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0825E9B02164673100994015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0825E9B32164673100994015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		0825E9C52164673100994015 /* EatSpectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatSpectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0825E9C92164673100994015 /* EatSpectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatSpectorUITests.swift; sourceTree = "<group>"; };
 		0825E9CB2164673100994015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08BB8422217702ED00EC8FEB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		08BB84242177032000EC8FEB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		0825E9A82164673000994015 /* EatSpector */ = {
 			isa = PBXGroup;
 			children = (
+				08BB8421217702D200EC8FEB /* ViewControllers */,
 				0825E9A92164673000994015 /* AppDelegate.swift */,
-				0825E9AB2164673000994015 /* ViewController.swift */,
 				0825E9AD2164673000994015 /* Main.storyboard */,
 				0825E9B02164673100994015 /* Assets.xcassets */,
 				0825E9B22164673100994015 /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				0825E9CB2164673100994015 /* Info.plist */,
 			);
 			path = EatSpectorUITests;
+			sourceTree = "<group>";
+		};
+		08BB8421217702D200EC8FEB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				08BB8422217702ED00EC8FEB /* SignUpViewController.swift */,
+				08BB84242177032000EC8FEB /* SignInViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0825E9AC2164673000994015 /* ViewController.swift in Sources */,
+				08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */,
 				0825E9AA2164673000994015 /* AppDelegate.swift in Sources */,
+				08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
