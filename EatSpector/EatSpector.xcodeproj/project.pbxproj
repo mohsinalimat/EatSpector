@@ -13,6 +13,8 @@
 		0825E9B42164673100994015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0825E9B22164673100994015 /* LaunchScreen.storyboard */; };
 		0825E9BF2164673100994015 /* EatSpectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825E9BE2164673100994015 /* EatSpectorTests.swift */; };
 		0825E9CA2164673100994015 /* EatSpectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825E9C92164673100994015 /* EatSpectorUITests.swift */; };
+		08A1E2F921791DEB0045F62E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1E2F821791DEB0045F62E /* HomeViewController.swift */; };
+		08A1E2FB21791EF60045F62E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1E2FA21791EF60045F62E /* DetailViewController.swift */; };
 		08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB8422217702ED00EC8FEB /* SignUpViewController.swift */; };
 		08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB84242177032000EC8FEB /* SignInViewController.swift */; };
 		08BB8427217794A700EC8FEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08BB8426217794A700EC8FEB /* GoogleService-Info.plist */; };
@@ -51,6 +53,8 @@
 		0825E9C52164673100994015 /* EatSpectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatSpectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0825E9C92164673100994015 /* EatSpectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatSpectorUITests.swift; sourceTree = "<group>"; };
 		0825E9CB2164673100994015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A1E2F821791DEB0045F62E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		08A1E2FA21791EF60045F62E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		08BB8422217702ED00EC8FEB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		08BB84242177032000EC8FEB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		08BB8426217794A700EC8FEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 			children = (
 				08BB8422217702ED00EC8FEB /* SignUpViewController.swift */,
 				08BB84242177032000EC8FEB /* SignInViewController.swift */,
+				08A1E2F821791DEB0045F62E /* HomeViewController.swift */,
+				08A1E2FA21791EF60045F62E /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,7 +182,6 @@
 				3D6C1A7ADBF3DBB2C0C0E706 /* Pods-EatSpectorUITests.debug.xcconfig */,
 				862D8F719B3702751626DE94 /* Pods-EatSpectorUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -411,7 +416,9 @@
 			files = (
 				08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */,
 				0825E9AA2164673000994015 /* AppDelegate.swift in Sources */,
+				08A1E2FB21791EF60045F62E /* DetailViewController.swift in Sources */,
 				08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */,
+				08A1E2F921791DEB0045F62E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
