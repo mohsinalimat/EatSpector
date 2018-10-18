@@ -20,12 +20,15 @@ The following **required** functionality is completed:
 - [ ] User can get directions using google map
 
 
-## Video Walkthrough
+## Screen Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of launch screen and signin/signup page:
 
 <img src='https://i.imgur.com/8hjtpUH.jpg' title='Launch Screen' width='290' alt='Launch Screen' /><img src='https://i.imgur.com/VdpDwXn.png' title='SignIn Screen' width='295' alt='SignIn Screen' /><img src='https://i.imgur.com/4Riv6qC.png' title='SignUp Screen' width='295' alt='SignUp Screen' />
 
+## Prototype
+
+Here's a walkthrough of implemented user stories:
 
 <img src='https://i.imgur.com/txYrB85.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
