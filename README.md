@@ -24,7 +24,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/8hjtpUH.jpg' title='Launch Screen' width='' alt='Launch Screen' /><img src='https://i.imgur.com/VdpDwXn.png' title='SignIn Screen' width='' alt='SignIn Screen' /> <img src='https://i.imgur.com/4Riv6qC.png' title='SignUp Screen' width='' alt='SignUp Screen' />
+<img src='https://i.imgur.com/8hjtpUH.jpg' title='Launch Screen' width='' alt='Launch Screen' /><img src='https://i.imgur.com/VdpDwXn.png' title='SignIn Screen' width='389' alt='SignIn Screen' /> <img src='https://i.imgur.com/4Riv6qC.png' title='SignUp Screen' width='389' alt='SignUp Screen' />
 
 
 <img src='https://i.imgur.com/txYrB85.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
