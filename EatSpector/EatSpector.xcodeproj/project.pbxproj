@@ -15,6 +15,10 @@
 		0825E9CA2164673100994015 /* EatSpectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825E9C92164673100994015 /* EatSpectorUITests.swift */; };
 		08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB8422217702ED00EC8FEB /* SignUpViewController.swift */; };
 		08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB84242177032000EC8FEB /* SignInViewController.swift */; };
+		08BB8427217794A700EC8FEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08BB8426217794A700EC8FEB /* GoogleService-Info.plist */; };
+		2B7CAD1D687B99C9EB73DB59 /* Pods_EatSpectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6802A06441007532F4C3458 /* Pods_EatSpectorTests.framework */; };
+		A95C8C53573430327F2165C9 /* Pods_EatSpectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B374A3318F0FFEB7C08CE58A /* Pods_EatSpectorUITests.framework */; };
+		DFFC856E49CCD9793408B7A2 /* Pods_EatSpector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4093E8A3101AA29D4E76591 /* Pods_EatSpector.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,16 @@
 		0825E9CB2164673100994015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08BB8422217702ED00EC8FEB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		08BB84242177032000EC8FEB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		08BB8426217794A700EC8FEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D6C1A7ADBF3DBB2C0C0E706 /* Pods-EatSpectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorUITests.debug.xcconfig"; path = "Target Support Files/Pods-EatSpectorUITests/Pods-EatSpectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		56C0EB14FBC4C8F4094A47FA /* Pods-EatSpectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorTests.release.xcconfig"; path = "Target Support Files/Pods-EatSpectorTests/Pods-EatSpectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CB26B77CE759787639608CC /* Pods-EatSpector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpector.release.xcconfig"; path = "Target Support Files/Pods-EatSpector/Pods-EatSpector.release.xcconfig"; sourceTree = "<group>"; };
+		862D8F719B3702751626DE94 /* Pods-EatSpectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorUITests.release.xcconfig"; path = "Target Support Files/Pods-EatSpectorUITests/Pods-EatSpectorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ADE0D99FDEE7C12DEE9CD778 /* Pods-EatSpectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorTests.debug.xcconfig"; path = "Target Support Files/Pods-EatSpectorTests/Pods-EatSpectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B26D8F5BFFCF886DC0FEDEC3 /* Pods-EatSpector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpector.debug.xcconfig"; path = "Target Support Files/Pods-EatSpector/Pods-EatSpector.debug.xcconfig"; sourceTree = "<group>"; };
+		B374A3318F0FFEB7C08CE58A /* Pods_EatSpectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatSpectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6802A06441007532F4C3458 /* Pods_EatSpectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatSpectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4093E8A3101AA29D4E76591 /* Pods_EatSpector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatSpector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFFC856E49CCD9793408B7A2 /* Pods_EatSpector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7CAD1D687B99C9EB73DB59 /* Pods_EatSpectorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A95C8C53573430327F2165C9 /* Pods_EatSpectorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				0825E9BD2164673100994015 /* EatSpectorTests */,
 				0825E9C82164673100994015 /* EatSpectorUITests */,
 				0825E9A72164673000994015 /* Products */,
+				D54F10231073F281AAEC24FB /* Pods */,
+				8F14A34A9B5B754220A6FE74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +124,7 @@
 				0825E9B02164673100994015 /* Assets.xcassets */,
 				0825E9B22164673100994015 /* LaunchScreen.storyboard */,
 				0825E9B52164673100994015 /* Info.plist */,
+				08BB8426217794A700EC8FEB /* GoogleService-Info.plist */,
 			);
 			path = EatSpector;
 			sourceTree = "<group>";
@@ -136,6 +156,30 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		8F14A34A9B5B754220A6FE74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4093E8A3101AA29D4E76591 /* Pods_EatSpector.framework */,
+				C6802A06441007532F4C3458 /* Pods_EatSpectorTests.framework */,
+				B374A3318F0FFEB7C08CE58A /* Pods_EatSpectorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D54F10231073F281AAEC24FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B26D8F5BFFCF886DC0FEDEC3 /* Pods-EatSpector.debug.xcconfig */,
+				5CB26B77CE759787639608CC /* Pods-EatSpector.release.xcconfig */,
+				ADE0D99FDEE7C12DEE9CD778 /* Pods-EatSpectorTests.debug.xcconfig */,
+				56C0EB14FBC4C8F4094A47FA /* Pods-EatSpectorTests.release.xcconfig */,
+				3D6C1A7ADBF3DBB2C0C0E706 /* Pods-EatSpectorUITests.debug.xcconfig */,
+				862D8F719B3702751626DE94 /* Pods-EatSpectorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0825E9CE2164673100994015 /* Build configuration list for PBXNativeTarget "EatSpector" */;
 			buildPhases = (
+				21F03622AB6065002EB7FA62 /* [CP] Check Pods Manifest.lock */,
 				0825E9A22164673000994015 /* Sources */,
 				0825E9A32164673000994015 /* Frameworks */,
 				0825E9A42164673000994015 /* Resources */,
+				48A9AE42A81AF22B3A8780A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0825E9D12164673100994015 /* Build configuration list for PBXNativeTarget "EatSpectorTests" */;
 			buildPhases = (
+				E9D64C9653D562EC5D8B3CD7 /* [CP] Check Pods Manifest.lock */,
 				0825E9B62164673100994015 /* Sources */,
 				0825E9B72164673100994015 /* Frameworks */,
 				0825E9B82164673100994015 /* Resources */,
@@ -178,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0825E9D42164673100994015 /* Build configuration list for PBXNativeTarget "EatSpectorUITests" */;
 			buildPhases = (
+				8B388DD8168651881D5998FE /* [CP] Check Pods Manifest.lock */,
 				0825E9C12164673100994015 /* Sources */,
 				0825E9C22164673100994015 /* Frameworks */,
 				0825E9C32164673100994015 /* Resources */,
@@ -241,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0825E9B42164673100994015 /* LaunchScreen.storyboard in Resources */,
+				08BB8427217794A700EC8FEB /* GoogleService-Info.plist in Resources */,
 				0825E9B12164673100994015 /* Assets.xcassets in Resources */,
 				0825E9AF2164673000994015 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +310,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21F03622AB6065002EB7FA62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EatSpector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A9AE42A81AF22B3A8780A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EatSpector/Pods-EatSpector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EatSpector/Pods-EatSpector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B388DD8168651881D5998FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EatSpectorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D64C9653D562EC5D8B3CD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EatSpectorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0825E9A22164673000994015 /* Sources */ = {
@@ -442,6 +584,7 @@
 		};
 		0825E9CF2164673100994015 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26D8F5BFFCF886DC0FEDEC3 /* Pods-EatSpector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,7 +594,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = RnR.PicMe;
+				PRODUCT_BUNDLE_IDENTIFIER = RnR.EatSpector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,6 +603,7 @@
 		};
 		0825E9D02164673100994015 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB26B77CE759787639608CC /* Pods-EatSpector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -469,7 +613,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = RnR.PicMe;
+				PRODUCT_BUNDLE_IDENTIFIER = RnR.EatSpector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,6 +622,7 @@
 		};
 		0825E9D22164673100994015 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE0D99FDEE7C12DEE9CD778 /* Pods-EatSpectorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +644,7 @@
 		};
 		0825E9D32164673100994015 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C0EB14FBC4C8F4094A47FA /* Pods-EatSpectorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +666,7 @@
 		};
 		0825E9D52164673100994015 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6C1A7ADBF3DBB2C0C0E706 /* Pods-EatSpectorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +687,7 @@
 		};
 		0825E9D62164673100994015 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 862D8F719B3702751626DE94 /* Pods-EatSpectorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
