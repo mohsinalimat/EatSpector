@@ -30,7 +30,7 @@ Here's a walkthrough of launch screen and signin/signup page:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/txYrB85.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/JdAsnz0.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
