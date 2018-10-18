@@ -15,7 +15,7 @@ The following **required** functionality is completed:
 - [ ] User can use current location to see restaurants around the area
 - [ ] User can see the grading letter and violation description for each restaurant
 - [ ] User can tap a restaurant and see its detail view
-- [ ] User can place an order using GrubHub
+- [ ] User can place an order using GrubHubhttps://i.imgur.com/8hjtpUH.jpg' title='Launch Screen' width='300' alt='Launch Screen
 - [ ] User can view restaurant location on google map
 - [ ] User can get directions using google map
 
@@ -24,7 +24,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/8hjtpUH.jpg' title='Launch Screen' width='300' alt='Launch Screen' /><img src='https://i.imgur.com/VdpDwXn.png' title='SignIn Screen' width='300' alt='SignIn Screen' /> <img src='https://i.imgur.com/4Riv6qC.png' title='SignUp Screen' width='300' alt='SignUp Screen' />
+<img src='' /><img src='https://i.imgur.com/VdpDwXn.png' title='SignIn Screen' width='280' alt='SignIn Screen' /> <img src='https://i.imgur.com/4Riv6qC.png' title='SignUp Screen' width='300' alt='SignUp Screen' />
 
 
 <img src='https://i.imgur.com/txYrB85.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
