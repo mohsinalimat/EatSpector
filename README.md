@@ -18,7 +18,7 @@ The following **required** functionality is completed:
 - [ ] User can use current location to see restaurants around the area
 - [ ] User can see the grading letter and violation description for each restaurant
 - [ ] User can tap a restaurant and see its detail view
-- [ ] User can place an order using GrubHubhttps://i.imgur.com/8hjtpUH.jpg' title='Launch Screen' width='300' alt='Launch Screen
+- [ ] User can place an order online using GrubHub
 - [ ] User can view restaurant location on google map
 - [ ] User can get directions using google map
 
