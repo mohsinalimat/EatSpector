@@ -1,6 +1,6 @@
 # Group Project - *EatSpector*
 
-**EatSpector** is an app that provides user with the current grading/violation report for the restaurants using The Socrata Open Data API (SODA).https://data.cityofnewyork.us/resource/9w7m-hzhe.json and it also allow users to order food online or get directions.
+**EatSpector** is an app that provides user with the current grading/violation report for the restaurants using The Socrata Open Data API (SODA) and it also allow users to order food online or get directions. Check out the API data endpoints here >> https://data.cityofnewyork.us/resource/9w7m-hzhe.json 
 
 Time spent: **X** hours spent in total
 
