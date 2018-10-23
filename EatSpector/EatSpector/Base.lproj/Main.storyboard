@@ -92,6 +92,13 @@
                     <view key="view" contentMode="scaleToFill" id="kD0-lx-XX1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aQ-1l-fLW">
+                                <rect key="frame" x="0.0" y="64" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="ij3-ak-WYA"/>
                     </view>
@@ -332,11 +339,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="email_icon" width="240" height="240"/>
-        <image name="icon" width="120" height="120"/>
-        <image name="paper" width="240" height="240"/>
-        <image name="passcode_icon2" width="240" height="240"/>
-        <image name="signinout_button" width="240" height="240"/>
-        <image name="user_icon" width="60" height="60"/>
+        <image name="email_icon" width="180" height="180"/>
+        <image name="icon" width="90" height="90"/>
+        <image name="paper" width="180" height="180"/>
+        <image name="passcode_icon2" width="180" height="180"/>
+        <image name="signinout_button" width="180" height="180"/>
+        <image name="user_icon" width="45" height="45"/>
     </resources>
 </document>
