@@ -23,6 +23,11 @@ The following **required** functionality is completed:
 - [ ] User can get directions using google map
 
 
+## Search Bar Functionality
+ - [ ] User can search restaurants nearby 3-5 miles parameters.
+ - [ ] User can add filters on what sort of restaurant they are looking for. (For example, Thai or Chinese).
+ - [ ] User can get all locations of specific restaurants through map.
+
 ## Screen Walkthrough
 
 Here's a walkthrough of launch screen and signin/signup page:
