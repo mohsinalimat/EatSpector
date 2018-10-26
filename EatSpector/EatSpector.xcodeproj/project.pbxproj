@@ -13,6 +13,9 @@
 		0825E9B42164673100994015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0825E9B22164673100994015 /* LaunchScreen.storyboard */; };
 		0825E9BF2164673100994015 /* EatSpectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825E9BE2164673100994015 /* EatSpectorTests.swift */; };
 		0825E9CA2164673100994015 /* EatSpectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825E9C92164673100994015 /* EatSpectorUITests.swift */; };
+		0830FC7B218170DE00896264 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830FC7A218170DE00896264 /* BusinessCell.swift */; };
+		0830FC7D2181748D00896264 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830FC7C2181748D00896264 /* Business.swift */; };
+		0830FC8221817B9F00896264 /* BusinessAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830FC8121817B9F00896264 /* BusinessAPIManager.swift */; };
 		08A1E2F921791DEB0045F62E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1E2F821791DEB0045F62E /* HomeViewController.swift */; };
 		08A1E2FB21791EF60045F62E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1E2FA21791EF60045F62E /* DetailViewController.swift */; };
 		08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB8422217702ED00EC8FEB /* SignUpViewController.swift */; };
@@ -53,6 +56,9 @@
 		0825E9C52164673100994015 /* EatSpectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatSpectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0825E9C92164673100994015 /* EatSpectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatSpectorUITests.swift; sourceTree = "<group>"; };
 		0825E9CB2164673100994015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0830FC7A218170DE00896264 /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		0830FC7C2181748D00896264 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		0830FC8121817B9F00896264 /* BusinessAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAPIManager.swift; sourceTree = "<group>"; };
 		08A1E2F821791DEB0045F62E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		08A1E2FA21791EF60045F62E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		08BB8422217702ED00EC8FEB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +128,9 @@
 		0825E9A82164673000994015 /* EatSpector */ = {
 			isa = PBXGroup;
 			children = (
+				0830FC8021817B7900896264 /* API */,
+				0830FC7F218174B400896264 /* Views */,
+				0830FC7E218174A100896264 /* Modals */,
 				08BB8421217702D200EC8FEB /* ViewControllers */,
 				0825E9A92164673000994015 /* AppDelegate.swift */,
 				0825E9AD2164673000994015 /* Main.storyboard */,
@@ -149,6 +158,30 @@
 				0825E9CB2164673100994015 /* Info.plist */,
 			);
 			path = EatSpectorUITests;
+			sourceTree = "<group>";
+		};
+		0830FC7E218174A100896264 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				0830FC7C2181748D00896264 /* Business.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		0830FC7F218174B400896264 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0830FC7A218170DE00896264 /* BusinessCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0830FC8021817B7900896264 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0830FC8121817B9F00896264 /* BusinessAPIManager.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		08BB8421217702D200EC8FEB /* ViewControllers */ = {
@@ -348,6 +381,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-EatSpector/Pods-EatSpector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -355,6 +389,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -415,10 +450,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */,
+				0830FC7D2181748D00896264 /* Business.swift in Sources */,
 				0825E9AA2164673000994015 /* AppDelegate.swift in Sources */,
 				08A1E2FB21791EF60045F62E /* DetailViewController.swift in Sources */,
+				0830FC8221817B9F00896264 /* BusinessAPIManager.swift in Sources */,
 				08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */,
 				08A1E2F921791DEB0045F62E /* HomeViewController.swift in Sources */,
+				0830FC7B218170DE00896264 /* BusinessCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
