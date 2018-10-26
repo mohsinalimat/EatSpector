@@ -6,8 +6,6 @@ target 'EatSpector' do
   use_frameworks!
 
   # Pods for EatSpector
-  pod 'Firebase/Core'
-  pod 'Firebase/Auth'
 
   target 'EatSpectorTests' do
     inherit! :search_paths
@@ -18,7 +16,5 @@ target 'EatSpector' do
     inherit! :search_paths
     # Pods for testing
   end
-  
-  pod 'AFNetworking'
 
 end
