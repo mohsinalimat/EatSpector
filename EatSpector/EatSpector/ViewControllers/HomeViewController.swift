@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseCore
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -21,5 +21,23 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // [START auth_listener]
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // [START_EXCLUDE]
+            self.setTitleDisplay(user)
+            self.tableView.reloadData()
+            // [END_EXCLUDE]
+        }
+        // [END auth_listener]
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // [START remove_auth_listener]
+        Auth.auth().removeStateDidChangeListener(handle!)
+        // [END remove_auth_listener]
+    }
+
 
 }

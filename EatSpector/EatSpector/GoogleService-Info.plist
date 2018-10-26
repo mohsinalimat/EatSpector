@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>765450919074-emu51fb10pr48u6cm86m28u8dqcuspnc.apps.googleusercontent.com</string>
+	<string>793704579057-jtlhvcghes9g7t3hb4ohhvstj5ej2val.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.765450919074-emu51fb10pr48u6cm86m28u8dqcuspnc</string>
+	<string>com.googleusercontent.apps.793704579057-jtlhvcghes9g7t3hb4ohhvstj5ej2val</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDcOhEcj-_W0bwB6WCTJscevGUQxaihHOw</string>
+	<string>AIzaSyANUE8bSZGf0VA1KHGpkIoFU42TAg7sujI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>765450919074</string>
+	<string>793704579057</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>RnR.EatSpector</string>
+	<string>com.eatspector.pann</string>
 	<key>PROJECT_ID</key>
-	<string>eatspector</string>
+	<string>eatspector-5c92e</string>
 	<key>STORAGE_BUCKET</key>
-	<string>eatspector.appspot.com</string>
+	<string>eatspector-5c92e.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:765450919074:ios:8b5bf7180446aa7c</string>
+	<string>1:793704579057:ios:5982ee834f61788b</string>
 	<key>DATABASE_URL</key>
-	<string>https://eatspector.firebaseio.com</string>
+	<string>https://eatspector-5c92e.firebaseio.com</string>
 </dict>
 </plist>
