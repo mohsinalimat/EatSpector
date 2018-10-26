@@ -1,4 +1,5 @@
 PODS:
+<<<<<<< HEAD
   - AFNetworking (3.2.1):
     - AFNetworking/NSURLSession (= 3.2.1)
     - AFNetworking/Reachability (= 3.2.1)
@@ -15,6 +16,12 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Firebase/Core (5.11.0):
+=======
+  - Firebase/Auth (5.10.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.0.4)
+  - Firebase/Core (5.10.0):
+>>>>>>> 3e0dac011ac50b6c99fc57efce4abcd6925bcbd7
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.3.0)
   - Firebase/CoreOnly (5.11.0):
@@ -28,7 +35,17 @@ PODS:
     - GoogleUtilities/Network (~> 5.2)
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
+<<<<<<< HEAD
   - FirebaseCore (5.1.6):
+=======
+  - FirebaseAuth (5.0.4):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.0)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (5.1.5):
+>>>>>>> 3e0dac011ac50b6c99fc57efce4abcd6925bcbd7
     - GoogleUtilities/Logger (~> 5.2)
   - FirebaseInstanceID (3.3.0):
     - FirebaseCore (~> 5.1)
@@ -58,6 +75,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.3.4):
     - GoogleUtilities/Logger
+<<<<<<< HEAD
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -66,6 +84,17 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+=======
+  - GTMSessionFetcher/Core (1.2.0)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+
+DEPENDENCIES:
+  - Firebase/Auth
+>>>>>>> 3e0dac011ac50b6c99fc57efce4abcd6925bcbd7
   - Firebase/Core
 
 SPEC REPOS:
@@ -73,13 +102,17 @@ SPEC REPOS:
     - AFNetworking
     - Firebase
     - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseInstanceID
     - GoogleAppMeasurement
     - GoogleUtilities
+    - GTMSessionFetcher
     - nanopb
 
 SPEC CHECKSUMS:
+<<<<<<< HEAD
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Firebase: b48f9e653da971ecce5b8c749684bc8bb2d26bd3
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
@@ -90,5 +123,19 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
 PODFILE CHECKSUM: 3aa56bdb27de565879e8a298cad3a41c7f03202f
+=======
+  Firebase: 6691d47562a780c26281ce8464518faafc90c610
+  FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
+  FirebaseAuth: 504b198ceb3472dca5c65bb95544ea44cfc9439e
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: c6079de64c1a87000e52e9b408dddcadc901177f
+  FirebaseInstanceID: 78ba376fcd5b94c001f9999b2cbd3d1f1e56e78d
+  GoogleAppMeasurement: 2b3a023a61239c8d002e6e4fcf4abce8eddce0e0
+  GoogleUtilities: 8208aee3e97a1ae93d44c57e96c476a5a3b03f0a
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-COCOAPODS: 1.6.0.beta.1
+PODFILE CHECKSUM: 2f82f0d46167aa18408a310c4d3ee4303899600a
+>>>>>>> 3e0dac011ac50b6c99fc57efce4abcd6925bcbd7
+
+COCOAPODS: 1.6.0.beta.2

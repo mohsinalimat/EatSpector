@@ -7,8 +7,9 @@
 //
 
 import UIKit
-
+import Firebase;
 class SignInViewController: UIViewController {
+    var handle: AuthStateDidChangeListenerHandle?
 
     
     @IBOutlet weak var usernameTextField: UITextField!
@@ -25,5 +26,18 @@ class SignInViewController: UIViewController {
     @IBAction func onClicked_SignInButton(_ sender: Any) {
         self.performSegue(withIdentifier: "logInSegue", sender: nil)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // [START auth_listener]
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // [START_EXCLUDE]
+//            self.setTitleDisplay(user)
+//            self.tableView.reloadData()
+            // [END_EXCLUDE]
+        }
+        // [END auth_listener]
+    }
+
     
 }
