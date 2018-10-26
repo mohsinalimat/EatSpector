@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase;
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor(red: 255, green: 0/255, blue: 0/255, alpha: 1)
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-       return true
+        
+        FirebaseApp.configure();
+        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
