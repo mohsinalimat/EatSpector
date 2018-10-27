@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase;
+import FirebaseAuth;
+
 class SignUpViewController: UIViewController, UINavigationControllerDelegate {
 
     
@@ -19,7 +21,6 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     
-    @IBOutlet weak var createAccountButton: UIButton!
     
     @IBOutlet weak var cancelButton: UIButton!
     

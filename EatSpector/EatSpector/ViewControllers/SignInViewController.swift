@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase;
+import FirebaseAuth;
+
 class SignInViewController: UIViewController {
     var handle: AuthStateDidChangeListenerHandle?
 

@@ -369,7 +369,6 @@
                     <navigationItem key="navigationItem" title="EatSpector" id="5Ry-lg-xPt"/>
                     <connections>
                         <outlet property="cancelButton" destination="obh-ay-YFG" id="9LH-9H-rsH"/>
-                        <outlet property="createAccountButton" destination="YDX-6g-eqQ" id="iTy-p6-Vv2"/>
                         <outlet property="emailTextField" destination="5BV-sa-DsX" id="4yb-ho-3rq"/>
                         <outlet property="passwordTextField" destination="sTn-Oi-3v5" id="bcF-qX-Gyi"/>
                         <outlet property="repeatPasswordTextField" destination="1H8-5g-fan" id="sFH-09-N6I"/>
