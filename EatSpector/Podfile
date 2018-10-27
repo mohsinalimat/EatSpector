@@ -8,6 +8,8 @@ target 'EatSpector' do
   # Pods for EatSpector
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'NVActivityIndicatorView'
+
 
   target 'EatSpectorTests' do
     inherit! :search_paths

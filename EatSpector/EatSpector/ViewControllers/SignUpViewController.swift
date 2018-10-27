@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase;
 class SignUpViewController: UIViewController, UINavigationControllerDelegate {
 
     
@@ -63,6 +63,36 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         UIView.animate(withDuration: 0.4) {
             self.scrollView.frame.size.height = self.view.frame.height
         }
+    }
+    @IBAction func onSubmit(_ sender: Any) {
+        guard let username = usernameTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        guard let email = emailTextField.text else {return}
+        guard let passwordConfirmation = repeatPasswordTextField.text else {return}
+        
+        if (password != passwordConfirmation)
+        {
+            let alert = UIAlertController(title: "Error", message: "Password and Confirmed Password must be matched", preferredStyle: .alert);
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil));
+            self.present(alert,animated: true);
+        }
+        else{
+            Auth.auth().createUser(withEmail: email, password: password){
+                user,error in
+                if error == nil && user != nil{
+                    print("User account is created.")
+                    let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                    changeRequest?.displayName = username;
+                    changeRequest?.commitChanges(completion: { (error) in
+                        if(error == nil){
+                            print ("User display name changed.");
+                            self.dismiss(animated: false, completion: nil);
+                        }
+                    })
+                }
+            }
+        }
+        
     }
     
     //dismiss the current viewController when click on cancel button
