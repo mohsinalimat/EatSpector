@@ -6,6 +6,7 @@ target 'EatSpector' do
   use_frameworks!
 
   # Pods for EatSpector
+
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'NVActivityIndicatorView'
