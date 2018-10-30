@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>793704579057-jtlhvcghes9g7t3hb4ohhvstj5ej2val.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.793704579057-jtlhvcghes9g7t3hb4ohhvstj5ej2val</string>
+	<key>API_KEY</key>
+	<string>AIzaSyANUE8bSZGf0VA1KHGpkIoFU42TAg7sujI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>793704579057</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.eatspector.pann</string>
+	<key>PROJECT_ID</key>
+	<string>eatspector-5c92e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>eatspector-5c92e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:793704579057:ios:5982ee834f61788b</string>
+	<key>DATABASE_URL</key>
+	<string>https://eatspector-5c92e.firebaseio.com</string>
+</dict>
+</plist>
