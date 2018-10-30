@@ -20,8 +20,8 @@
 		08A1E2FB21791EF60045F62E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1E2FA21791EF60045F62E /* DetailViewController.swift */; };
 		08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB8422217702ED00EC8FEB /* SignUpViewController.swift */; };
 		08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB84242177032000EC8FEB /* SignInViewController.swift */; };
+		08E3DC24218922F2004F7CB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08E3DC23218922F2004F7CB3 /* GoogleService-Info.plist */; };
 		2B7CAD1D687B99C9EB73DB59 /* Pods_EatSpectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6802A06441007532F4C3458 /* Pods_EatSpectorTests.framework */; };
-		86EEE4712182A2CE00FAE771 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86EEE4702182A2CE00FAE771 /* GoogleService-Info.plist */; };
 		A95C8C53573430327F2165C9 /* Pods_EatSpectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B374A3318F0FFEB7C08CE58A /* Pods_EatSpectorUITests.framework */; };
 		DFFC856E49CCD9793408B7A2 /* Pods_EatSpector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4093E8A3101AA29D4E76591 /* Pods_EatSpector.framework */; };
 /* End PBXBuildFile section */
@@ -63,11 +63,11 @@
 		08A1E2FA21791EF60045F62E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		08BB8422217702ED00EC8FEB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		08BB84242177032000EC8FEB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		08E3DC23218922F2004F7CB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3D6C1A7ADBF3DBB2C0C0E706 /* Pods-EatSpectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorUITests.debug.xcconfig"; path = "Target Support Files/Pods-EatSpectorUITests/Pods-EatSpectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		56C0EB14FBC4C8F4094A47FA /* Pods-EatSpectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorTests.release.xcconfig"; path = "Target Support Files/Pods-EatSpectorTests/Pods-EatSpectorTests.release.xcconfig"; sourceTree = "<group>"; };
 		5CB26B77CE759787639608CC /* Pods-EatSpector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpector.release.xcconfig"; path = "Target Support Files/Pods-EatSpector/Pods-EatSpector.release.xcconfig"; sourceTree = "<group>"; };
 		862D8F719B3702751626DE94 /* Pods-EatSpectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorUITests.release.xcconfig"; path = "Target Support Files/Pods-EatSpectorUITests/Pods-EatSpectorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		86EEE4702182A2CE00FAE771 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADE0D99FDEE7C12DEE9CD778 /* Pods-EatSpectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorTests.debug.xcconfig"; path = "Target Support Files/Pods-EatSpectorTests/Pods-EatSpectorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B26D8F5BFFCF886DC0FEDEC3 /* Pods-EatSpector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpector.debug.xcconfig"; path = "Target Support Files/Pods-EatSpector/Pods-EatSpector.debug.xcconfig"; sourceTree = "<group>"; };
 		B374A3318F0FFEB7C08CE58A /* Pods_EatSpectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatSpectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,10 +134,10 @@
 				08BB8421217702D200EC8FEB /* ViewControllers */,
 				0825E9A92164673000994015 /* AppDelegate.swift */,
 				0825E9AD2164673000994015 /* Main.storyboard */,
+				08E3DC23218922F2004F7CB3 /* GoogleService-Info.plist */,
 				0825E9B02164673100994015 /* Assets.xcassets */,
 				0825E9B22164673100994015 /* LaunchScreen.storyboard */,
 				0825E9B52164673100994015 /* Info.plist */,
-				86EEE4702182A2CE00FAE771 /* GoogleService-Info.plist */,
 			);
 			path = EatSpector;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0825E9B42164673100994015 /* LaunchScreen.storyboard in Resources */,
-				86EEE4712182A2CE00FAE771 /* GoogleService-Info.plist in Resources */,
+				08E3DC24218922F2004F7CB3 /* GoogleService-Info.plist in Resources */,
 				0825E9B12164673100994015 /* Assets.xcassets in Resources */,
 				0825E9AF2164673000994015 /* Main.storyboard in Resources */,
 			);
