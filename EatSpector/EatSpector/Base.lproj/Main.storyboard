@@ -55,7 +55,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onClicked_SignInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MtO-2y-JVQ"/>
-                                    <segue destination="cwO-1x-URr" kind="presentation" identifier="logInSegue" id="zCj-d1-a4Z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft0-Ta-nu1">
@@ -79,15 +78,21 @@
                                 <rect key="frame" x="143" y="151" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Q0Q-3o-lDQ">
+                                <rect key="frame" x="198" y="370" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="EatSpector" id="fV8-D0-8En"/>
                     <connections>
+                        <outlet property="loadingIndicator" destination="Q0Q-3o-lDQ" id="C7g-PM-Atn"/>
                         <outlet property="passwordTextField" destination="lC9-i1-VUz" id="x2p-SK-NTU"/>
                         <outlet property="signInButton" destination="CgH-KF-xHd" id="PjD-RQ-RY3"/>
                         <outlet property="usernameTextField" destination="b59-JS-fR1" id="qGD-Lu-sAj"/>
+                        <segue destination="cwO-1x-URr" kind="presentation" identifier="logInSegue" id="oYr-OT-rlI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -289,6 +294,9 @@
                                         <state key="normal" title="Create account" backgroundImage="signinout_button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onSubmit:" destination="gdT-Qa-irp" eventType="touchUpInside" id="TC7-tq-Gs6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obh-ay-YFG">
                                         <rect key="frame" x="126" y="555" width="160" height="46"/>
@@ -361,7 +369,6 @@
                     <navigationItem key="navigationItem" title="EatSpector" id="5Ry-lg-xPt"/>
                     <connections>
                         <outlet property="cancelButton" destination="obh-ay-YFG" id="9LH-9H-rsH"/>
-                        <outlet property="createAccountButton" destination="YDX-6g-eqQ" id="iTy-p6-Vv2"/>
                         <outlet property="emailTextField" destination="5BV-sa-DsX" id="4yb-ho-3rq"/>
                         <outlet property="passwordTextField" destination="sTn-Oi-3v5" id="bcF-qX-Gyi"/>
                         <outlet property="repeatPasswordTextField" destination="1H8-5g-fan" id="sFH-09-N6I"/>
