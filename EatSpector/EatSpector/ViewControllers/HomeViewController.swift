@@ -59,5 +59,15 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
+    
+    //code to connect with detailViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let business = businesses[indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.business = business
+        }
+    }
 
 }
