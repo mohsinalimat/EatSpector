@@ -21,6 +21,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     
+    @IBOutlet weak var onCreateAccountButton: UIButton!
     
     @IBOutlet weak var cancelButton: UIButton!
     
@@ -65,7 +66,9 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
             self.scrollView.frame.size.height = self.view.frame.height
         }
     }
-    @IBAction func onSubmit(_ sender: Any) {
+    
+    @IBAction func onCreateAccountButton(_ sender: Any) {
+        print("Press created account button");
         guard let username = usernameTextField.text else {return}
         guard let password = passwordTextField.text else {return}
         guard let email = emailTextField.text else {return}
@@ -93,8 +96,8 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
                 }
             }
         }
-        
     }
+    
     
     //dismiss the current viewController when click on cancel button
     @IBAction func cancelButton_Clicked(_ sender: Any) {self.view.window!.rootViewController?.presentedViewController?.dismiss(animated: true, completion: nil)

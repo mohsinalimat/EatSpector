@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tum-BT-xFt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tum-BT-xFt">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,6 +73,9 @@
                                 <state key="normal" title="Continue without an account">
                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick_withoutAccountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S60-F6-xHP"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="I4r-WM-f30">
                                 <rect key="frame" x="143" y="151" width="130" height="130"/>
@@ -295,7 +298,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="onSubmit:" destination="gdT-Qa-irp" eventType="touchUpInside" id="TC7-tq-Gs6"/>
+                                            <action selector="onCreateAccountButton:" destination="gdT-Qa-irp" eventType="touchUpInside" id="x8b-ei-O1A"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obh-ay-YFG">
@@ -370,6 +373,7 @@
                     <connections>
                         <outlet property="cancelButton" destination="obh-ay-YFG" id="9LH-9H-rsH"/>
                         <outlet property="emailTextField" destination="5BV-sa-DsX" id="4yb-ho-3rq"/>
+                        <outlet property="onCreateAccountButton" destination="YDX-6g-eqQ" id="2Dc-lf-I31"/>
                         <outlet property="passwordTextField" destination="sTn-Oi-3v5" id="bcF-qX-Gyi"/>
                         <outlet property="repeatPasswordTextField" destination="1H8-5g-fan" id="sFH-09-N6I"/>
                         <outlet property="scrollView" destination="F4I-w3-GYm" id="K3V-Yn-77P"/>
