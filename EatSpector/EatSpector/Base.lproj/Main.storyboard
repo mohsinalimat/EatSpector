@@ -215,16 +215,6 @@
             </objects>
             <point key="canvasLocation" x="802.89855072463774" y="164.67391304347828"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="MAm-pS-pVM">
-            <objects>
-                <viewController id="pvb-lv-i5Q" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="uby-cj-6g9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8lc-os-Yhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1706" y="156"/>
-        </scene>
         <!--EatSpector-->
         <scene sceneID="82V-Ia-tYC">
             <objects>
