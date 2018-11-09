@@ -291,6 +291,7 @@
             <point key="canvasLocation" x="802.89855072463774" y="164.67391304347828"/>
         </scene>
         <!--Detail View Controller-->
+<<<<<<< HEAD:EatSpector/EatSpector/Main.storyboard
 <<<<<<< HEAD
         <scene sceneID="MAm-pS-pVM">
             <objects>
@@ -316,6 +317,10 @@
 =======
         <scene sceneID="5yv-4k-Uzs">
             <objects>
+=======
+        <scene sceneID="5yv-4k-Uzs">
+            <objects>
+>>>>>>> fc77304d154f3214ac0a81e3948f04adc31df945:EatSpector/EatSpector/Base.lproj/Main.storyboard
                 <viewController id="4Kv-7Q-HW7" customClass="DetailViewController" customModule="EatSpector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IRK-0V-bv5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -401,6 +406,7 @@
                         <outlet property="gradingLabel" destination="yPy-Aa-XhB" id="tOi-Dc-dOR"/>
                         <outlet property="record_dateLabel" destination="s4r-EI-dLK" id="mCu-M7-21t"/>
                     </connections>
+<<<<<<< HEAD:EatSpector/EatSpector/Main.storyboard
 >>>>>>> fc77304d154f3214ac0a81e3948f04adc31df945
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2RY-Wj-oJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -410,6 +416,12 @@
 =======
             <point key="canvasLocation" x="1579.7101449275362" y="164.67391304347828"/>
 >>>>>>> fc77304d154f3214ac0a81e3948f04adc31df945
+=======
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2RY-Wj-oJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1579.7101449275362" y="164.67391304347828"/>
+>>>>>>> fc77304d154f3214ac0a81e3948f04adc31df945:EatSpector/EatSpector/Base.lproj/Main.storyboard
         </scene>
         <!--EatSpector-->
         <scene sceneID="82V-Ia-tYC">

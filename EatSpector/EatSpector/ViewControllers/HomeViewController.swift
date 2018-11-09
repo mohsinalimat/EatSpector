@@ -85,7 +85,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
-<<<<<<< HEAD
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard !searchText.isEmpty else
         {
@@ -102,8 +101,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         searching = true;
         tableView.reloadData();
     }
-    
-=======
     //code to connect with detailViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
@@ -113,6 +110,4 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             detailViewController.business = business
         }
     }
-
->>>>>>> fc77304d154f3214ac0a81e3948f04adc31df945
 }
