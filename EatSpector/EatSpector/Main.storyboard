@@ -73,6 +73,9 @@
                                 <state key="normal" title="Continue without an account">
                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick_withoutAccountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S60-F6-xHP"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="I4r-WM-f30">
                                 <rect key="frame" x="143" y="151" width="130" height="130"/>
@@ -245,6 +248,7 @@
                                             <outlet property="categoriesLabel" destination="Aes-Mx-WNz" id="3Ra-iR-sW3"/>
                                             <outlet property="gradingLabel" destination="1MC-bL-A8A" id="lQR-sp-xAK"/>
                                             <outlet property="record_dateLabel" destination="mLc-yk-e0W" id="TBa-Fx-wrf"/>
+                                            <segue destination="4Kv-7Q-HW7" kind="show" id="zuf-re-4wS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -287,6 +291,7 @@
             <point key="canvasLocation" x="802.89855072463774" y="164.67391304347828"/>
         </scene>
         <!--Detail View Controller-->
+<<<<<<< HEAD
         <scene sceneID="MAm-pS-pVM">
             <objects>
                 <viewController id="pvb-lv-i5Q" customClass="DetailViewController" customModule="EatSpector" customModuleProvider="target" sceneMemberID="viewController">
@@ -308,10 +313,103 @@
                         <viewLayoutGuide key="safeArea" id="zY9-Ti-GZ6"/>
                     </scrollView>
                     <navigationItem key="navigationItem" id="uby-cj-6g9"/>
+=======
+        <scene sceneID="5yv-4k-Uzs">
+            <objects>
+                <viewController id="4Kv-7Q-HW7" customClass="DetailViewController" customModule="EatSpector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IRK-0V-bv5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="business_pic" translatesAutoresizingMaskIntoConstraints="NO" id="K9b-QF-FyJ">
+                                <rect key="frame" x="0.0" y="34" width="414" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yummy Thai" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq5-JP-DNV">
+                                <rect key="frame" x="0.0" y="173" width="414" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPy-Aa-XhB">
+                                <rect key="frame" x="78" y="340" width="329" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxv-Hj-gKv">
+                                <rect key="frame" x="15" y="340" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LR5-2N-lwo">
+                                <rect key="frame" x="15" y="369" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Record Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDy-kf-O8m">
+                                <rect key="frame" x="14" y="398" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10-11-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4r-EI-dLK">
+                                <rect key="frame" x="122" y="398" width="285" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="43-12 Longwood Ave, NY 12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTz-TZ-lqC">
+                                <rect key="frame" x="103" y="427" width="304" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYR-eZ-4Hv">
+                                <rect key="frame" x="15" y="427" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Asian, Thai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1x7-cV-53Z">
+                                <rect key="frame" x="100" y="369" width="291" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="T1a-oZ-eUE"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="yTz-TZ-lqC" id="vk7-PM-vg6"/>
+                        <outlet property="businessNameLabel" destination="Hq5-JP-DNV" id="zWY-SJ-mzw"/>
+                        <outlet property="busniessImg" destination="K9b-QF-FyJ" id="1bJ-ev-o6i"/>
+                        <outlet property="categoriesLabel" destination="1x7-cV-53Z" id="sNq-Hk-KIA"/>
+                        <outlet property="gradingLabel" destination="yPy-Aa-XhB" id="tOi-Dc-dOR"/>
+                        <outlet property="record_dateLabel" destination="s4r-EI-dLK" id="mCu-M7-21t"/>
+                    </connections>
+>>>>>>> fc77304d154f3214ac0a81e3948f04adc31df945
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8lc-os-Yhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2RY-Wj-oJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2613.04347826087" y="155.70652173913044"/>
+=======
+            <point key="canvasLocation" x="1579.7101449275362" y="164.67391304347828"/>
+>>>>>>> fc77304d154f3214ac0a81e3948f04adc31df945
         </scene>
         <!--EatSpector-->
         <scene sceneID="82V-Ia-tYC">
@@ -386,7 +484,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="onSubmit:" destination="gdT-Qa-irp" eventType="touchUpInside" id="TC7-tq-Gs6"/>
+                                            <action selector="onCreateAccountButton:" destination="gdT-Qa-irp" eventType="touchUpInside" id="x8b-ei-O1A"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obh-ay-YFG">
@@ -461,6 +559,7 @@
                     <connections>
                         <outlet property="cancelButton" destination="obh-ay-YFG" id="9LH-9H-rsH"/>
                         <outlet property="emailTextField" destination="5BV-sa-DsX" id="4yb-ho-3rq"/>
+                        <outlet property="onCreateAccountButton" destination="YDX-6g-eqQ" id="2Dc-lf-I31"/>
                         <outlet property="passwordTextField" destination="sTn-Oi-3v5" id="bcF-qX-Gyi"/>
                         <outlet property="repeatPasswordTextField" destination="1H8-5g-fan" id="sFH-09-N6I"/>
                         <outlet property="scrollView" destination="F4I-w3-GYm" id="K3V-Yn-77P"/>
@@ -554,6 +653,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="business_pic" width="283.46456909179688" height="189.07086181640625"/>
         <image name="email_icon" width="180" height="180"/>
         <image name="icon" width="90" height="90"/>
         <image name="paper" width="180" height="180"/>
