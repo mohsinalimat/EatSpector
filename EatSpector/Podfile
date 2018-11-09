@@ -9,6 +9,7 @@ target 'EatSpector' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   pod 'NVActivityIndicatorView'
   pod 'AFNetworking'
 

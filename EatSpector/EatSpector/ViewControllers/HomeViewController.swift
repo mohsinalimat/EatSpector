@@ -9,10 +9,13 @@
 import UIKit
 import AFNetworking
 
-class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
     
     @IBOutlet weak var tableView: UITableView!
     var businesses: [Business] = []
+    
+    var searchInput: [Business]?;
+    var searching = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,20 +25,42 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //tableView.estimatedRowHeight = 650
         tableView.dataSource = self
         fetchBusinesses()
+        setupNavBar();
     }
-    
+    func setupNavBar(){
+        navigationController?.navigationBar.prefersLargeTitles = true;
+        let searchController = UISearchController(searchResultsController: nil);
+        navigationItem.searchController = searchController;
+        searchController.delegate = self as? UISearchControllerDelegate;
+        navigationItem.hidesSearchBarWhenScrolling = false;
+    }
     //count business
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return businesses.count
+        if searching{
+            print(searchInput?.count ?? 0)
+            return searchInput?.count ?? businesses.count;
+        }
+        else{
+            print(businesses.count);
+            return businesses.count;
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "BusinessCell", for: indexPath) as! BusinessCell
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.orange
         cell.selectedBackgroundView = backgroundView
         cell.contentView.backgroundColor = UIColor.white
-        cell.business = businesses[indexPath.row]
+        if searching{
+            let filterResult = searchInput?[indexPath.row]
+            cell.textLabel?.text = filterResult?.name;
+        }
+        else {
+            cell.business = businesses[indexPath.row]
+        }
         return cell
     }
     
@@ -59,5 +84,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
-
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else
+        {
+            searchInput = businesses;
+            tableView.reloadData()
+            return
+            
+        }
+        
+        searchInput = businesses.filter({ (Business) -> Bool in
+            guard searchBar.text != nil else { return false;}
+            return Business.name.contains(searchText);
+        })
+        searching = true;
+        tableView.reloadData();
+    }
+    
 }
