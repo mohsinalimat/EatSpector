@@ -13,7 +13,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     var businesses: [Business] = []
-    
+    let cellSpacingHeight: CGFloat = 20
+
     var searchInput: [Business]?;
     var searching = false;
     
@@ -24,8 +25,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //tableView.rowHeight = UITableView.automaticDimension
         //tableView.estimatedRowHeight = 650
         tableView.dataSource = self
+        tableView.rowHeight = 120
         fetchBusinesses()
-        setupNavBar();
+        
+//        setupNavBar();
     }
     func setupNavBar(){
         navigationController?.navigationBar.prefersLargeTitles = true;
@@ -53,7 +56,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.orange
         cell.selectedBackgroundView = backgroundView
-        cell.contentView.backgroundColor = UIColor.white
+        cell.contentView.backgroundColor = UIColor.red
         if searching{
             let filterResult = searchInput?[indexPath.row]
             cell.textLabel?.text = filterResult?.name;
@@ -61,6 +64,17 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         else {
             cell.business = businesses[indexPath.row]
         }
+        let whiteRoundedView : UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 120))
+
+        
+        whiteRoundedView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 0.9])
+        whiteRoundedView.layer.masksToBounds = false
+        whiteRoundedView.layer.cornerRadius = 2.0
+        whiteRoundedView.layer.shadowOffset = CGSize(width: -1, height: 1)
+        whiteRoundedView.layer.shadowOpacity = 0.2
+        
+        cell.contentView.addSubview(whiteRoundedView)
+        cell.contentView.sendSubviewToBack(whiteRoundedView)
         return cell
     }
     
@@ -84,6 +98,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
+
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard !searchText.isEmpty else
