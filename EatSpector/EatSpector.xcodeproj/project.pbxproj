@@ -19,6 +19,7 @@
 		08A1E2FB21791EF60045F62E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1E2FA21791EF60045F62E /* DetailViewController.swift */; };
 		08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB8422217702ED00EC8FEB /* SignUpViewController.swift */; };
 		08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB84242177032000EC8FEB /* SignInViewController.swift */; };
+		08D602962197A1AE00889958 /* SeamLessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D602952197A1AE00889958 /* SeamLessViewController.swift */; };
 		08E3DC24218922F2004F7CB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08E3DC23218922F2004F7CB3 /* GoogleService-Info.plist */; };
 		2B7CAD1D687B99C9EB73DB59 /* Pods_EatSpectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6802A06441007532F4C3458 /* Pods_EatSpectorTests.framework */; };
 		867F6A7A21950C140092533F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867F6A7921950C140092533F /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		08A1E2FA21791EF60045F62E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		08BB8422217702ED00EC8FEB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		08BB84242177032000EC8FEB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		08D602952197A1AE00889958 /* SeamLessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeamLessViewController.swift; sourceTree = "<group>"; };
 		08E3DC23218922F2004F7CB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3D6C1A7ADBF3DBB2C0C0E706 /* Pods-EatSpectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorUITests.debug.xcconfig"; path = "Target Support Files/Pods-EatSpectorUITests/Pods-EatSpectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		56C0EB14FBC4C8F4094A47FA /* Pods-EatSpectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorTests.release.xcconfig"; path = "Target Support Files/Pods-EatSpectorTests/Pods-EatSpectorTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				08BB84242177032000EC8FEB /* SignInViewController.swift */,
 				08A1E2F821791DEB0045F62E /* HomeViewController.swift */,
 				08A1E2FA21791EF60045F62E /* DetailViewController.swift */,
+				08D602952197A1AE00889958 /* SeamLessViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */,
 				08A1E2F921791DEB0045F62E /* HomeViewController.swift in Sources */,
 				0830FC7B218170DE00896264 /* BusinessCell.swift in Sources */,
+				08D602962197A1AE00889958 /* SeamLessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
