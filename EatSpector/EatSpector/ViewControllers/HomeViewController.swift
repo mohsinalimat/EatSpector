@@ -15,7 +15,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var businesses: [Business] = []
     let cellSpacingHeight: CGFloat = 20
 
-    var searchInput: [Business]?;
+    var searchInput: [Business] = [];
     var searching = false;
     
     override func viewDidLoad() {
@@ -40,8 +40,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //count business
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searching{
-            print(searchInput?.count ?? 0)
-            return searchInput?.count ?? businesses.count;
+            print(searchInput.count )
+            return searchInput.count ;
         }
         else{
             print(businesses.count);
@@ -57,13 +57,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         backgroundView.backgroundColor = UIColor.orange
         cell.selectedBackgroundView = backgroundView
         cell.contentView.backgroundColor = UIColor.red
-        if searching{
-            let filterResult = searchInput?[indexPath.row]
-            cell.textLabel?.text = filterResult?.name;
-        }
-        else {
-            cell.business = businesses[indexPath.row]
-        }
         let whiteRoundedView : UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 120))
 
         
@@ -75,6 +68,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         cell.contentView.addSubview(whiteRoundedView)
         cell.contentView.sendSubviewToBack(whiteRoundedView)
+        if searchInput.count != 0
+        {
+            cell.business = searchInput[indexPath.row]
+        }
+        else
+        {
+            cell.business = businesses[indexPath.row]
+        }
         return cell
     }
     
@@ -101,21 +102,28 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        guard !searchText.isEmpty else
-        {
-            searchInput = businesses;
-            tableView.reloadData()
-            return
-            
-        }
+
         
         searchInput = businesses.filter({ (Business) -> Bool in
             guard searchBar.text != nil else { return false;}
-            return Business.name.contains(searchText);
+            return Business.name.lowercased().contains(searchText.lowercased())
         })
         searching = true;
-        tableView.reloadData();
+        tableView.reloadData();            
     }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searching = false;
+        searchBar.text = "";
+        searchInput = []
+        tableView.reloadData();
+        searchBar.resignFirstResponder()
+
+    }
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+    
+    
     //code to connect with detailViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
@@ -125,4 +133,5 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             detailViewController.business = business
         }
     }
+    
 }
