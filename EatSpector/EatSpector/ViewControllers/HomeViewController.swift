@@ -116,6 +116,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         searching = true;
         tableView.reloadData();
     }
+    
     //code to connect with detailViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
