@@ -245,21 +245,6 @@
             </objects>
             <point key="canvasLocation" x="1579.7101449275362" y="164.67391304347828"/>
         </scene>
-        <!--Seam Less View Controller-->
-        <scene sceneID="IpA-30-5L4">
-            <objects>
-                <viewController id="zLI-aW-z49" customClass="SeamLessViewController" customModule="EatSpector" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lDQ-Gk-pUq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="82D-7L-S6u"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dtU-Lm-eMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2337.68115942029" y="164.67391304347828"/>
-        </scene>
         <!--EatSpector-->
         <scene sceneID="82V-Ia-tYC">
             <objects>
