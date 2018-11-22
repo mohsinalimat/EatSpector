@@ -12,15 +12,20 @@ class Business {
     var name: String
     var categories: String
     var grading: String
-    var address: String
+    var address: String = ""
     var record_date: String
     
     init(dictionary: [String:Any]){
         name = dictionary["dba"] as? String ?? "no name"
         categories = dictionary["cuisine_description"] as? String ?? "no category"
         grading = dictionary["grade"] as? String ?? "grading currently not available"
-        address = dictionary["zipcode"] as? String ?? "address not available"
+        
         record_date = dictionary["record_date"] as? String ?? "no date"
+        address += (dictionary["street"] as! String) + (",") + (dictionary["boro"] as! String)+(",")+(dictionary["zipcode"] as! String);
+        if address == ",,"
+            {
+                address = "Address not avaliable"                
+            }
     }
     
     class func businesses(dictionaries: [[String: Any]]) -> [Business]{

@@ -22,8 +22,10 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         loadingIndicator.isHidden = true;
+        
     }
     
     
