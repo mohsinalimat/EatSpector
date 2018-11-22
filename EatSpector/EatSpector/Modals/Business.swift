@@ -12,10 +12,12 @@ class Business {
     var name: String
     var categories: String
     var grading: String
+
     var building_number: String
     var street: String
     var boro: String
     var zipcode: String
+    var address: String = ""
     var record_date: String
     
     init(dictionary: [String:Any]){
@@ -27,6 +29,11 @@ class Business {
         boro = dictionary["boro"] as? String ?? "boro not available"
         zipcode = dictionary["zipcode"] as? String ?? "zipcode not available"
         record_date = dictionary["record_date"] as? String ?? "no date"
+        /*address += (dictionary["street"] as! String) + (",") + (dictionary["boro"] as! String)+(",")+(dictionary["zipcode"] as! String);
+        if address == ",,"
+            {
+                address = "Address not avaliable"                
+            }*/
     }
     
     class func businesses(dictionaries: [[String: Any]]) -> [Business]{
