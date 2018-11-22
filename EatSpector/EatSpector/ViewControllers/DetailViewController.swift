@@ -18,6 +18,14 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var record_dateLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var inspectionTypeLabel: UILabel!
+    
+    @IBOutlet weak var inspectionDateLabel: UILabel!
+    
+    @IBOutlet weak var violationCodeLabel: UILabel!
+    
+    @IBOutlet weak var violationDescriptionLabel: UILabel!
     
     let locationManager = CLLocationManager()
     
@@ -28,10 +36,15 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
         
         if let business = business {
             businessNameLabel.text = business.name
-            gradingLabel.text = "Grade: " + business.grading
-            record_dateLabel.text = "Record date: " + business.record_date
+            gradingLabel.text = "Grade - " + business.grading
+            record_dateLabel.text = "Record date - " + business.record_date
             addressLabel.text = formatAddress(strBuilding: business.building_number, strStreet: business.street, strBoro: business.boro, strZip: business.zipcode)
             phoneLabel.text = "Tel: " + arrangeUSFormat(strPhone: business.phone)
+            scoreLabel.text = "Score - " + business.score
+            inspectionDateLabel.text = "Inspection date - " + business.inspection_date
+            inspectionTypeLabel.text = "Inspection type - " + business.inspection_type
+            violationCodeLabel.text = "Violation date - " + business.violation_code
+            violationDescriptionLabel.text = "Violation type - " + business.violation_Description
         }
     }
     
