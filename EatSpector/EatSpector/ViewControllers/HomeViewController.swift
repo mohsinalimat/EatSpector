@@ -119,10 +119,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         searchBar.resignFirstResponder()
 
     }
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        searchBar.showsCancelButton = true
-    }
-    
     
     //code to connect with detailViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
