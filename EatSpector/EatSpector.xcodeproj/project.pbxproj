@@ -20,6 +20,8 @@
 		08BB8423217702ED00EC8FEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB8422217702ED00EC8FEB /* SignUpViewController.swift */; };
 		08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB84242177032000EC8FEB /* SignInViewController.swift */; };
 		08E3DC24218922F2004F7CB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08E3DC23218922F2004F7CB3 /* GoogleService-Info.plist */; };
+		08F261B221A720C400F74E89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F261B121A720C400F74E89 /* MainViewController.swift */; };
+		08F261B421A723F200F74E89 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F261B321A723F200F74E89 /* MainCell.swift */; };
 		2B7CAD1D687B99C9EB73DB59 /* Pods_EatSpectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6802A06441007532F4C3458 /* Pods_EatSpectorTests.framework */; };
 		867F6A7A21950C140092533F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867F6A7921950C140092533F /* Main.storyboard */; };
 		86D8A28F219A716F00E4316E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D8A28E219A716F00E4316E /* Home.storyboard */; };
@@ -64,6 +66,8 @@
 		08BB8422217702ED00EC8FEB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		08BB84242177032000EC8FEB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		08E3DC23218922F2004F7CB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08F261B121A720C400F74E89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		08F261B321A723F200F74E89 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		3D6C1A7ADBF3DBB2C0C0E706 /* Pods-EatSpectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorUITests.debug.xcconfig"; path = "Target Support Files/Pods-EatSpectorUITests/Pods-EatSpectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		56C0EB14FBC4C8F4094A47FA /* Pods-EatSpectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpectorTests.release.xcconfig"; path = "Target Support Files/Pods-EatSpectorTests/Pods-EatSpectorTests.release.xcconfig"; sourceTree = "<group>"; };
 		5CB26B77CE759787639608CC /* Pods-EatSpector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSpector.release.xcconfig"; path = "Target Support Files/Pods-EatSpector/Pods-EatSpector.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				0830FC7A218170DE00896264 /* BusinessCell.swift */,
+				08F261B321A723F200F74E89 /* MainCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				08BB84242177032000EC8FEB /* SignInViewController.swift */,
 				08A1E2F821791DEB0045F62E /* HomeViewController.swift */,
 				08A1E2FA21791EF60045F62E /* DetailViewController.swift */,
+				08F261B121A720C400F74E89 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -463,8 +469,10 @@
 				0830FC7D2181748D00896264 /* Business.swift in Sources */,
 				0825E9AA2164673000994015 /* AppDelegate.swift in Sources */,
 				08A1E2FB21791EF60045F62E /* DetailViewController.swift in Sources */,
+				08F261B421A723F200F74E89 /* MainCell.swift in Sources */,
 				0830FC8221817B9F00896264 /* BusinessAPIManager.swift in Sources */,
 				08BB84252177032000EC8FEB /* SignInViewController.swift in Sources */,
+				08F261B221A720C400F74E89 /* MainViewController.swift in Sources */,
 				08A1E2F921791DEB0045F62E /* HomeViewController.swift in Sources */,
 				0830FC7B218170DE00896264 /* BusinessCell.swift in Sources */,
 			);

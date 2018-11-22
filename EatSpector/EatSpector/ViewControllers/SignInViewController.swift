@@ -75,5 +75,15 @@ class SignInViewController: UIViewController {
         self.performSegue(withIdentifier: "logInSegue", sender: (Any).self);
     }
     
+    
+    @IBAction func onClick_MainButton(_ sender: Any) {
+        print("clicked continue without account button");
+        self.loadingIndicator.stopAnimating();
+        self.loadingIndicator.isHidden = true;
+        self.navigationController!.popViewController(animated: true)
+        self.performSegue(withIdentifier: "mainSegue", sender: (Any).self);
+    }
+    
+    
 }
 
