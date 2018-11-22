@@ -34,10 +34,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //code to display cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! MainCell
-        let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor.red
-        cell.selectedBackgroundView = backgroundView
-        cell.contentView.backgroundColor = UIColor.white
         cell.business = businesses[indexPath.row]
         return cell
     }

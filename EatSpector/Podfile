@@ -12,6 +12,9 @@ target 'EatSpector' do
   pod 'Firebase/Database'
   pod 'NVActivityIndicatorView'
   pod 'AFNetworking'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'GoogleMaps'
 
   target 'EatSpectorTests' do
     inherit! :search_paths
