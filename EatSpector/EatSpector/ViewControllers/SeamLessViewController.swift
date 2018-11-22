@@ -9,17 +9,30 @@
 import UIKit
 import WebKit
 import CoreLocation
+import MapKit
 
 class SeamLessViewController: UIViewController, WKUIDelegate, CLLocationManagerDelegate {
-
+    
+    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var SeamlessOrderWebView: WKWebView!
+    var business: Business?
     
     let locationManager = CLLocationManager()
-
-    var business: Business?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let business = business {
+            let street = business.street
+            let trimedStreet = street.replacingOccurrences(of: " ", with: "+")
+            let address = business.building_number + "+" + trimedStreet + "+" + business.boro + "+" + business.zipcode
+            let baseURLString = "https://www.google.com/maps/search/"
+            
+            if let url = URL(string: baseURLString + address) {
+                UIApplication.shared.open(url, options: [:])
+            }
+        }
+        
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         
@@ -31,22 +44,11 @@ class SeamLessViewController: UIViewController, WKUIDelegate, CLLocationManagerD
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
-        
-        if UIApplication.shared.canOpenURL(URL(string: "https://www.google.com/maps/search/pizza")!) {
-            // Map is installed. Launch Map and get direction
-           // let urlStr = String(format: "maps://place/" + business!.name)
-           // UIApplication.shared.openURL(URL(string: "maps://place/pizza")!)
-            UIApplication.shared.openURL(URL(string: "https://www.google.com/maps/search/pizza")!)
-        } else {
-            // Map is not installed. Launch AppStore to install Map app
-            
-            UIApplication.shared.openURL(URL(string: "https://www.google.com/maps/place/pizza")!)
-        }
     }
     
-
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
+    
 }

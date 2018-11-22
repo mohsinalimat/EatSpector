@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreLocation
 
-class DetailViewController: UIViewController {
+
+class DetailViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var busniessImg: UIImageView!
     @IBOutlet weak var businessNameLabel: UILabel!
@@ -17,6 +19,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var record_dateLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
+    let locationManager = CLLocationManager()
+
     var business: Business?
     
     override func viewDidLoad() {
@@ -27,9 +31,19 @@ class DetailViewController: UIViewController {
             gradingLabel.text = business.grading
             categoriesLabel.text = business.categories
             record_dateLabel.text = business.record_date
-            addressLabel.text = business.address
+            let building = business.building_number + " "
+            let street = business.street + ", "
+            let boro = business.boro + ", "
+            let state = "NY "
+            let zip = business.zipcode + " "
+            addressLabel.text = building+street+boro+state+zip
         }
-        // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let trailerViewController = segue.destination as! SeamLessViewController
+        trailerViewController.business = business
+        
     }
 
 }

@@ -27,7 +27,11 @@ class BusinessCell: UITableViewCell {
             self.categoriesLabel.text = business.categories
             self.gradingLabel.text = business.grading
             self.record_dateLabel.text = business.record_date
-            self.addressLabel.text = business.address
+            let building = business.building_number + " "
+            let street = business.street + " "
+            let boro = business.boro + " "
+            let zipcode = business.zipcode
+            self.addressLabel.text = building+street+boro+zipcode
         }
     }
     

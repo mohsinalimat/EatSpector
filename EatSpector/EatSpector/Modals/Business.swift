@@ -12,14 +12,20 @@ class Business {
     var name: String
     var categories: String
     var grading: String
-    var address: String
+    var building_number: String
+    var street: String
+    var boro: String
+    var zipcode: String
     var record_date: String
     
     init(dictionary: [String:Any]){
         name = dictionary["dba"] as? String ?? "no name"
         categories = dictionary["cuisine_description"] as? String ?? "no category"
         grading = dictionary["grade"] as? String ?? "grading currently not available"
-        address = dictionary["zipcode"] as? String ?? "address not available"
+        building_number = dictionary["building"] as? String ?? "building number not available"
+        street = dictionary["street"] as? String ?? "street not available"
+        boro = dictionary["boro"] as? String ?? "boro not available"
+        zipcode = dictionary["zipcode"] as? String ?? "zipcode not available"
         record_date = dictionary["record_date"] as? String ?? "no date"
     }
     
