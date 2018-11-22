@@ -7,14 +7,10 @@
 //
 
 import UIKit
-import WebKit
 import CoreLocation
-import MapKit
 
-class SeamLessViewController: UIViewController, WKUIDelegate, CLLocationManagerDelegate {
+class SeamLessViewController: UIViewController, CLLocationManagerDelegate {
     
-    @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var SeamlessOrderWebView: WKWebView!
     var business: Business?
     
     let locationManager = CLLocationManager()
