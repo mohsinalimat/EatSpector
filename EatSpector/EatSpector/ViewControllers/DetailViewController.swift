@@ -50,7 +50,7 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
     
     //code to format address
     func formatAddress(strBuilding : String, strStreet : String, strBoro : String, strZip : String)-> String{
-        var strUpdated = strBuilding + " " + strStreet + ", " + strBoro + ", NY " + strZip
+        let strUpdated = strBuilding + " " + strStreet + ", " + strBoro + ", NY " + strZip
         return strUpdated
     }
     
