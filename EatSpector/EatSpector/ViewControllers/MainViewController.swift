@@ -7,7 +7,9 @@
 //
 
 import UIKit
-import AFNetworking
+import CoreLocation
+import AVFoundation
+import SafariServices
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -38,7 +40,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
-    
     //fetch businesses
     func fetchBusinesses () {
         BusinessAPIManager().getBusinesses { (businesses: [Business]?, error: Error?) in
@@ -59,14 +60,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    //code to connect with detailViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let business = businesses[indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.business = business
+        }
+    }
 }

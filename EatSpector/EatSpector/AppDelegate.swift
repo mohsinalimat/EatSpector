@@ -12,7 +12,10 @@ import Firebase;
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    static let googleMapsApiKey = "AIzaSyBV2akct5tPf2nQ4mfzEpHj47SvMSMMlro"
+    static let googlePlacesAPIKey = "AIzaSyBV2akct5tPf2nQ4mfzEpHj47SvMSMMlro"
+    
     var window: UIWindow?
     var ref: DatabaseReference!
 

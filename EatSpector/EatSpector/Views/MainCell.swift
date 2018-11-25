@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MainCell: UITableViewCell {
 
@@ -16,8 +17,8 @@ class MainCell: UITableViewCell {
     @IBOutlet weak var record_dateLabel: UILabel!
     @IBOutlet weak var gradingLabel: UILabel!
     @IBOutlet weak var websiteLabel: UILabel!
-    
-    
+    @IBOutlet weak var businessImgView: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -30,13 +31,13 @@ class MainCell: UITableViewCell {
             self.gradingLabel.text = "Letter Grading - " + business.grading
             self.record_dateLabel.text = "Record Date - " + business.record_date
             let building = business.building_number + " "
-            let street = business.street + " "
-            let boro = business.boro + " "
+            let street = business.street + ", "
+            let boro = business.boro + ", NY "
             let zipcode = business.zipcode
             self.addressLabel.text = "Address - " + building+street+boro+zipcode
         }
     }
-    
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

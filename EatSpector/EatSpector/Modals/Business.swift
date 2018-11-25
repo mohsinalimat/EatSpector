@@ -30,7 +30,7 @@ class Business {
     init(dictionary: [String:Any]){
         name = dictionary["dba"] as? String ?? "no name"
         categories = dictionary["cuisine_description"] as? String ?? "no category"
-        grading = dictionary["grade"] as? String ?? "grading currently not available"
+        grading = dictionary["grade"] as? String ?? "Not Available"
         building_number = dictionary["building"] as? String ?? "building number not available"
         street = dictionary["street"] as? String ?? "street not available"
         boro = dictionary["boro"] as? String ?? "boro not available"
