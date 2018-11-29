@@ -18,8 +18,9 @@ class BusinessAPIManager {
         session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
     }
     
+    // WILL LIMIT AMOUNT OF TOTAL REQUEST MADE TO 50.
     func getBusinesses(completion: @escaping ([Business]?, Error?) -> ()) {
-        let url = URL(string: BusinessAPIManager.baseUrl)!
+        let url = URL(string: (BusinessAPIManager.baseUrl)+"?$where=grade%20in('A')&$order=dba&$limit=50")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let task = session.dataTask(with: request) { (data, response, error) in
             // This will run when the network request returns
@@ -36,13 +37,15 @@ class BusinessAPIManager {
         }
         task.resume()
     }
+    
+    // WILL BE USED TO FILTER THE RESULT BY NAME.
     func getSearchResult(search: String, completion: @escaping ([Business]?, Error?) -> ()){
         let Name = search;
         let inParam = "?$where=dba in("+Name+")";
         let url = URL(string: BusinessAPIManager.baseUrl+inParam)!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let task = session.dataTask(with: request) { (data, response, error) in
-            // This will run when the network request returns        
+            // This will be used to search for specific address.
             if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [AnyObject]
                 

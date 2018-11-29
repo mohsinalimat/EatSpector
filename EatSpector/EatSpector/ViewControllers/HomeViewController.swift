@@ -25,7 +25,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //tableView.rowHeight = UITableView.automaticDimension
         //tableView.estimatedRowHeight = 650
         tableView.dataSource = self
-        tableView.rowHeight = 120
         fetchBusinesses()
         
 //        setupNavBar();
@@ -57,7 +56,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         backgroundView.backgroundColor = UIColor.orange
         cell.selectedBackgroundView = backgroundView
         cell.contentView.backgroundColor = UIColor.red
-        let whiteRoundedView : UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 120))
+        let whiteRoundedView : UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 175))
 
         
         whiteRoundedView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 0.9])
@@ -113,7 +112,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false;
-        searchBar.text = "";
         searchInput = []
         tableView.reloadData();
         searchBar.resignFirstResponder()
