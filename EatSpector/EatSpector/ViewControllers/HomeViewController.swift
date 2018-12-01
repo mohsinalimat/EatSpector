@@ -8,8 +8,11 @@
 
 import UIKit
 import AFNetworking
+import CoreLocation
 
-class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, CLLocationManagerDelegate{
+    
+    let locationManager: CLLocationManager = CLLocationManager();
     
     @IBOutlet weak var tableView: UITableView!
     var businesses: [Business] = []
@@ -24,11 +27,28 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.rowHeight = 200
         //tableView.rowHeight = UITableView.automaticDimension
         //tableView.estimatedRowHeight = 650
+        
+        locationManager.delegate = self;
+        locationManager.requestWhenInUseAuthorization();
+        locationManager.startUpdatingLocation();
+        
+        locationManager.distanceFilter = 100;
+        //locationManager.stopUpdatingLocation()
+        
+        
         tableView.dataSource = self
         fetchBusinesses()
         
 //        setupNavBar();
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        for currentLocation in locations{
+            print("Index: \(index): \(currentLocation)");
+            
+        }
+    }
+    
     func setupNavBar(){
         navigationController?.navigationBar.prefersLargeTitles = true;
         let searchController = UISearchController(searchResultsController: nil);
