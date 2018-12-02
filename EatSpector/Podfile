@@ -18,6 +18,7 @@ target 'EatSpector' do
   pod 'AlamofireImage'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'ImageSlideshow', '~> 1.6'
 
   target 'EatSpectorTests' do
     inherit! :search_paths

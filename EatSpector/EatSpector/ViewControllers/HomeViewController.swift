@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import Firebase
 import CoreLocation
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, CLLocationManagerDelegate{
