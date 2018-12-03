@@ -38,8 +38,8 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
             addressLabel.text = formatAddress(strBuilding: business.building_number, strStreet: business.street, strBoro: business.boro, strZip: business.zipcode)
             phoneLabel.text = "Tel: " + arrangeUSFormat(strPhone: business.phone)
             scoreLabel.text = "Score : " + business.score
-            inspectionDateLabel.text = business.inspection_date
-            inspectionTypeLabel.text = business.inspection_type
+            //inspectionDateLabel.text = business.inspection_date
+            //inspectionTypeLabel.text = business.inspection_type
             violationCodeLabel.text = business.violation_code
             violationDescriptionLabel.text = business.violation_Description
         }
