@@ -7,6 +7,8 @@ target 'EatSpector' do
 
   # Pods for EatSpector
 
+  source 'https://github.com/CocoaPods/Specs.git'
+
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
@@ -15,6 +17,8 @@ target 'EatSpector' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'ImageSlideshow', '~> 1.6'
 
   target 'EatSpectorTests' do
     inherit! :search_paths

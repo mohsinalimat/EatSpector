@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 import AVFoundation
-import SafariServices
+import FirebaseAuth
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -69,4 +69,18 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             detailViewController.business = business
         }
     }
+    @IBAction func OnLogout(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! SignInViewController
+        self.present(newViewController, animated: true, completion: nil)
+        
+    }
+    
 }
