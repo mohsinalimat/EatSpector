@@ -357,7 +357,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9I-IB-2Ep">
-                                <rect key="frame" x="347" y="420" width="55" height="55"/>
+                                <rect key="frame" x="278" y="422" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get Direction" image="get_direction">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -367,11 +367,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZY-D0-r36">
-                                <rect key="frame" x="284" y="420" width="55" height="55"/>
+                                <rect key="frame" x="211" y="408" width="66" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="GrubHub_icon2"/>
+                                <state key="normal" title="Button" image="yelp_icon"/>
                                 <connections>
                                     <action selector="onClick_GrubHubButton:" destination="4Kv-7Q-HW7" eventType="touchUpInside" id="YXd-oO-VBr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLK-xR-vr6">
+                                <rect key="frame" x="341" y="421" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="uber"/>
+                                <connections>
+                                    <action selector="onClicked_Uber:" destination="4Kv-7Q-HW7" eventType="touchUpInside" id="SJw-ce-ps4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -625,7 +633,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GrubHub_icon2" width="180" height="180"/>
         <image name="business_pic" width="283.46456909179688" height="189.07086181640625"/>
         <image name="email_icon" width="180" height="180"/>
         <image name="get_direction" width="288" height="288"/>
@@ -637,8 +644,10 @@
         <image name="record_date_icon" width="512" height="512"/>
         <image name="score_icon_2" width="512" height="512"/>
         <image name="signinout_button" width="180" height="180"/>
+        <image name="uber" width="1200" height="1200"/>
         <image name="user_icon" width="45" height="45"/>
         <image name="violation_code_icon" width="128" height="128"/>
         <image name="violation_desc_icon" width="430" height="500"/>
+        <image name="yelp_icon" width="363" height="436"/>
     </resources>
 </document>
