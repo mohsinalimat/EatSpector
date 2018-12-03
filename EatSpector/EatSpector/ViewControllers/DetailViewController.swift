@@ -38,8 +38,8 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
             addressLabel.text = formatAddress(strBuilding: business.building_number, strStreet: business.street, strBoro: business.boro, strZip: business.zipcode)
             phoneLabel.text = "Tel: " + arrangeUSFormat(strPhone: business.phone)
             scoreLabel.text = "Score : " + business.score
-            inspectionDateLabel.text = business.inspection_date
-            inspectionTypeLabel.text = business.inspection_type
+            //inspectionDateLabel.text = business.inspection_date
+            //inspectionTypeLabel.text = business.inspection_type
             violationCodeLabel.text = business.violation_code
             violationDescriptionLabel.text = business.violation_Description
         }
@@ -79,10 +79,52 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
         print("google presses")
     }
     
-    
+    //code to go to Yelp for menu
     @IBAction func onClick_GrubHubButton(_ sender: Any) {
-        print("GrubHub clicked")
+        if let business = business {
+            let name = business.name
+            let trimedName = name.replacingOccurrences(of: " ", with: "-")
+            let filteredName = trimedName.replacingOccurrences(of: "&", with: "and")
+            
+            
+            let boro = business.boro
+            let trimedBoro = boro.replacingOccurrences(of: " ", with: "-")
+            
+            let baseURLString = "https://www.yelp.com/biz/"
+            
+            if let url = URL(string: baseURLString + filteredName + "-" + trimedBoro ) {
+                UIApplication.shared.open(url, options: [:])
+            }
+        }
+        print("Yelp button pressed.")
     }
+    
+    //code to order a ride using Uber
+    @IBAction func onClicked_Uber(_ sender: Any) {
+        if let business = business {
+            let street = business.street
+            let trimedStreet = street.replacingOccurrences(of: " ", with: "+")
+            let address = business.building_number + "+" + trimedStreet + "+" + business.boro + "+" + business.zipcode
+            let baseURLString = "uber://"
+            
+           /* if let url = URL(string:  "waze://" ) {
+                UIApplication.shared.open(url, options: [:])
+            }*/
+            
+            if UIApplication.shared.canOpenURL(URL(string: "uber://")!) {
+                // Uber is installed. Launch Uber and start navigation
+                let urlStr = String(format: "uber://")
+                UIApplication.shared.open(URL(string: urlStr)!)
+
+                //UIApplication.shared.openURL(URL(string: urlStr)!)
+            } else {
+                // if Uber is not installed. Launch AppStore to install Uber app
+                UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/id368677368")!)
+            }
+        }
+        print("Uber button pressed.")
+    }
+    
     
     /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      

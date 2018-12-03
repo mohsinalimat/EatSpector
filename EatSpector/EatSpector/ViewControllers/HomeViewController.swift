@@ -18,7 +18,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableView: UITableView!
     var businesses: [Business] = []
     let cellSpacingHeight: CGFloat = 20
-
+    
     var searchInput: [Business] = [];
     var searching = false;
     
@@ -40,7 +40,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.dataSource = self
         fetchBusinesses()
         
-//        setupNavBar();
+        //        setupNavBar();
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -78,7 +78,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.selectedBackgroundView = backgroundView
         cell.contentView.backgroundColor = UIColor.red
         let whiteRoundedView : UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 175))
-
+        
         
         whiteRoundedView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 0.9])
         whiteRoundedView.layer.masksToBounds = false
@@ -119,24 +119,24 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
-
+    
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-
+        
         
         searchInput = businesses.filter({ (Business) -> Bool in
             guard searchBar.text != nil else { return false;}
             return Business.name.lowercased().contains(searchText.lowercased())
         })
         searching = true;
-        tableView.reloadData();            
+        tableView.reloadData();
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false;
         searchInput = []
         tableView.reloadData();
         searchBar.resignFirstResponder()
-
+        
     }
     
     //code to connect with detailViewController
