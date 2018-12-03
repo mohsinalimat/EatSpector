@@ -207,8 +207,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recommendation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1A-Qs-Kx0">
+                                <rect key="frame" x="104" y="64" width="167" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXx-cc-QCQ" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="16" y="96" width="343" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Weu-q3-gT7"/>
+                                    <constraint firstAttribute="width" constant="343" id="XBc-1O-6Fm"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Qv-6j-hiU">
-                                <rect key="frame" x="16" y="20" width="343" height="236"/>
+                                <rect key="frame" x="16" y="353" width="343" height="236"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="SL1-M1-BWY"/>
@@ -344,30 +359,15 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seasonal Recommendation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1A-Qs-Kx0">
-                                <rect key="frame" x="16" y="265" width="258" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXx-cc-QCQ" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="16" y="297" width="343" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Weu-q3-gT7"/>
-                                    <constraint firstAttribute="width" constant="343" id="XBc-1O-6Fm"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3Qv-6j-hiU" firstAttribute="top" secondItem="Twj-HB-SgA" secondAttribute="top" constant="20" id="McK-XA-fQK"/>
+                            <constraint firstItem="3Qv-6j-hiU" firstAttribute="top" secondItem="Twj-HB-SgA" secondAttribute="top" constant="353" id="McK-XA-fQK"/>
                             <constraint firstItem="nVK-Ge-AgZ" firstAttribute="trailing" secondItem="uXx-cc-QCQ" secondAttribute="trailing" constant="16" id="WO1-ar-4kY"/>
                             <constraint firstItem="uXx-cc-QCQ" firstAttribute="leading" secondItem="nVK-Ge-AgZ" secondAttribute="leading" constant="16" id="WPH-Ah-dZG"/>
                             <constraint firstItem="3Qv-6j-hiU" firstAttribute="leading" secondItem="nVK-Ge-AgZ" secondAttribute="leading" constant="16" id="YFA-nO-aAQ"/>
                             <constraint firstItem="nVK-Ge-AgZ" firstAttribute="trailing" secondItem="3Qv-6j-hiU" secondAttribute="trailing" constant="16" id="lvS-78-Kcx"/>
-                            <constraint firstItem="uXx-cc-QCQ" firstAttribute="top" secondItem="3Qv-6j-hiU" secondAttribute="bottom" constant="41" id="mpL-hO-rK6"/>
+                            <constraint firstItem="uXx-cc-QCQ" firstAttribute="top" secondItem="3Qv-6j-hiU" secondAttribute="bottom" constant="-493" id="mpL-hO-rK6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nVK-Ge-AgZ"/>
                     </view>
