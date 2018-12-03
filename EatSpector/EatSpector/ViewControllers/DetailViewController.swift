@@ -111,15 +111,15 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
                 UIApplication.shared.open(url, options: [:])
             }*/
             
-            if UIApplication.shared.canOpenURL(URL(string: "map://")!) {
+            if UIApplication.shared.canOpenURL(URL(string: "uber://")!) {
                 // Uber is installed. Launch Uber and start navigation
-                let urlStr = String(format: "map://")
+                let urlStr = String(format: "uber://")
                 UIApplication.shared.open(URL(string: urlStr)!)
 
                 //UIApplication.shared.openURL(URL(string: urlStr)!)
             } else {
                 // if Uber is not installed. Launch AppStore to install Uber app
-                UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/uber/id368677368?mt=12")!)
+                UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/id368677368")!)
             }
         }
         print("Uber button pressed.")
