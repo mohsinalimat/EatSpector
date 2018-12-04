@@ -14,8 +14,7 @@ class SuggestViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var recommendations = [String]()
-    var newRecommendation: String = ""
+
     
     var handle: AuthStateDidChangeListenerHandle?
 
@@ -24,6 +23,7 @@ class SuggestViewController: UIViewController {
     }
     
     @IBOutlet weak var ImageView: ImageSlideshow!
+    
     let localSource = [ImageSource(imageString: "hd-201401-r-sausage-and-broccoli-rabe-with-polenta")!, ImageSource(imageString: "beef-noodle-soup-8")!, ImageSource(imageString: "1371606132101")!, ImageSource(imageString: "182_3_9296_jpeg_ad23f8cb-854b-41ea-85b6-e1afd54da69a")!]
  //   let afNetworkingSource = [AFURLSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, AFURLSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, AFURLSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
 //    let alamofireSource = [AlamofireSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, AlamofireSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, AlamofireSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
@@ -32,7 +32,6 @@ class SuggestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recommendations = ["BMW","Audi","Volkswagen"]
         ImageView.slideshowInterval = 5.0
         ImageView.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
         ImageView.contentScaleMode = UIView.ContentMode.scaleAspectFill
