@@ -263,13 +263,13 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="43-12 Longwood Ave, NY 12345" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTz-TZ-lqC">
                                 <rect key="frame" x="20" y="400" width="374" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel: 1-212-345-9987" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQf-tt-HJh">
                                 <rect key="frame" x="20" y="420" width="374" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
@@ -342,7 +342,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9I-IB-2Ep">
-                                <rect key="frame" x="82" y="447" width="55" height="55"/>
+                                <rect key="frame" x="82" y="449" width="55" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="9Vw-Nu-08J"/>
                                     <constraint firstAttribute="height" constant="55" id="WXZ-IO-XFP"/>
@@ -355,12 +355,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLK-xR-vr6">
-                                <rect key="frame" x="179" y="447" width="55" height="55"/>
+                                <rect key="frame" x="179" y="449" width="55" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="4iy-wS-X2W"/>
                                     <constraint firstAttribute="height" constant="55" id="Znm-QW-kKL"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="uber"/>
+                                <state key="normal" title="Button" image="lyft"/>
                                 <connections>
                                     <action selector="onClicked_Uber:" destination="4Kv-7Q-HW7" eventType="touchUpInside" id="SJw-ce-ps4"/>
                                 </connections>
@@ -391,7 +391,7 @@
                             <constraint firstItem="Hq5-JP-DNV" firstAttribute="top" secondItem="K9b-QF-FyJ" secondAttribute="bottom" constant="5" id="3XV-3r-MxA"/>
                             <constraint firstItem="76O-Pu-GZV" firstAttribute="top" secondItem="VQf-tt-HJh" secondAttribute="bottom" constant="7" id="415-e8-3KZ"/>
                             <constraint firstItem="T1a-oZ-eUE" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Hq5-JP-DNV" secondAttribute="trailing" constant="20" id="5V5-TD-Cqa"/>
-                            <constraint firstItem="E9I-IB-2Ep" firstAttribute="top" secondItem="iVp-WC-nSa" secondAttribute="bottom" constant="2" id="5qS-lm-h27"/>
+                            <constraint firstItem="E9I-IB-2Ep" firstAttribute="top" secondItem="iVp-WC-nSa" secondAttribute="bottom" constant="4" id="5qS-lm-h27"/>
                             <constraint firstItem="VCF-Bi-SbR" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="13" id="6QR-pd-VEj"/>
                             <constraint firstItem="T1a-oZ-eUE" firstAttribute="trailing" secondItem="VQf-tt-HJh" secondAttribute="trailing" constant="20" id="6vq-Zf-9is"/>
                             <constraint firstItem="iVp-WC-nSa" firstAttribute="top" secondItem="T1a-oZ-eUE" secondAttribute="top" constant="275" id="CAF-ry-hWz"/>
@@ -414,7 +414,7 @@
                             <constraint firstItem="KZY-D0-r36" firstAttribute="top" secondItem="VQf-tt-HJh" secondAttribute="bottom" constant="1" id="ay5-0t-N9Y"/>
                             <constraint firstItem="yTz-TZ-lqC" firstAttribute="top" secondItem="Hq5-JP-DNV" secondAttribute="bottom" constant="5" id="cH5-hg-j3J"/>
                             <constraint firstItem="E9I-IB-2Ep" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="82" id="d5H-Qi-MMo"/>
-                            <constraint firstItem="eLK-xR-vr6" firstAttribute="top" secondItem="iVp-WC-nSa" secondAttribute="bottom" constant="2" id="dxK-EF-eTj"/>
+                            <constraint firstItem="eLK-xR-vr6" firstAttribute="top" secondItem="iVp-WC-nSa" secondAttribute="bottom" constant="4" id="dxK-EF-eTj"/>
                             <constraint firstItem="VQf-tt-HJh" firstAttribute="top" secondItem="yTz-TZ-lqC" secondAttribute="bottom" constant="3" id="e9Z-Ad-0sG"/>
                             <constraint firstItem="VCF-Bi-SbR" firstAttribute="top" secondItem="76O-Pu-GZV" secondAttribute="bottom" constant="10" id="edq-Pk-cd4"/>
                             <constraint firstItem="J4g-7C-F66" firstAttribute="top" secondItem="VCF-Bi-SbR" secondAttribute="bottom" constant="8" id="eqD-yp-mlx"/>
@@ -689,12 +689,12 @@
         <image name="get_direction" width="288" height="288"/>
         <image name="grade_icon" width="512" height="512"/>
         <image name="icon" width="90" height="90"/>
+        <image name="lyft" width="571" height="574"/>
         <image name="paper" width="180" height="180"/>
         <image name="passcode_icon2" width="180" height="180"/>
         <image name="record_date_icon" width="512" height="512"/>
         <image name="score_icon_2" width="512" height="512"/>
         <image name="signinout_button" width="180" height="180"/>
-        <image name="uber" width="1200" height="1200"/>
         <image name="user_icon" width="45" height="45"/>
         <image name="violation_code_icon" width="128" height="128"/>
         <image name="violation_desc_icon" width="430" height="500"/>
