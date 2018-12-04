@@ -12,6 +12,11 @@ import FirebaseAuth
 
 class SuggestViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var recommendations = [String]()
+    var newRecommendation: String = ""
+    
     var handle: AuthStateDidChangeListenerHandle?
 
     open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -27,6 +32,7 @@ class SuggestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        recommendations = ["BMW","Audi","Volkswagen"]
         ImageView.slideshowInterval = 5.0
         ImageView.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
         ImageView.contentScaleMode = UIView.ContentMode.scaleAspectFill
@@ -49,7 +55,10 @@ class SuggestViewController: UIViewController {
         ImageView.addGestureRecognizer(recognizer)
         // Do any additional setup after loading the view.
     }
+
     
+    
+    //fullscreen images
     @objc func didTap() {
         let fullScreenController = ImageView.presentFullScreenController(from: self)
         // set the activity indicator for full screen controller (skipping the line will show no activity indicator)
@@ -69,7 +78,7 @@ class SuggestViewController: UIViewController {
         self.present(newViewController, animated: true, completion: nil)
 
     }
-    
+  
     /*
     // MARK: - Navigation
 
