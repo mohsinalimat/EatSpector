@@ -279,6 +279,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxa-a7-wR5">
+                                <rect key="frame" x="164" y="623" width="89" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grade_icon" translatesAutoresizingMaskIntoConstraints="NO" id="VCF-Bi-SbR">
                                 <rect key="frame" x="13" y="522" width="25" height="25"/>
                                 <constraints>
@@ -314,14 +321,15 @@
                                     <constraint firstAttribute="width" constant="25" id="xjT-pH-zG9"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Accurate thermometer not provided in refrigerated or hot holding equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-dP-DIH">
-                                <rect key="frame" x="45" y="686" width="357" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvg-u3-gES">
+                                <rect key="frame" x="46" y="590" width="90" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvg-u3-gES">
-                                <rect key="frame" x="46" y="590" width="90" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Violation Code: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UV0-R1-2uI">
+                                <rect key="frame" x="47" y="622" width="109" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -368,17 +376,11 @@
                                     <action selector="onClick_GrubHubButton:" destination="4Kv-7Q-HW7" eventType="touchUpInside" id="YXd-oO-VBr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxa-a7-wR5">
-                                <rect key="frame" x="164" y="623" width="89" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-dP-DIH">
+                                <rect key="frame" x="46" y="676" width="365" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Violation Code: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UV0-R1-2uI">
-                                <rect key="frame" x="47" y="622" width="109" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <string key="text">Accurate thermometer not provided in refrigerated or hot holding equipment.Accurate thermometer not provided in refrigerated or hot holding equipment.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -401,12 +403,10 @@
                             <constraint firstItem="T1a-oZ-eUE" firstAttribute="trailing" secondItem="yTz-TZ-lqC" secondAttribute="trailing" constant="20" id="P5T-co-2TF"/>
                             <constraint firstItem="J4g-7C-F66" firstAttribute="top" secondItem="VCF-Bi-SbR" secondAttribute="bottom" constant="8" id="PI4-Gy-Kin"/>
                             <constraint firstItem="T1a-oZ-eUE" firstAttribute="trailing" secondItem="CCs-ct-ctB" secondAttribute="trailing" constant="293.5" id="QCi-Y6-4lj"/>
-                            <constraint firstItem="T1a-oZ-eUE" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="X1k-dP-DIH" secondAttribute="bottom" constant="159" id="Ryh-Lp-3dQ"/>
                             <constraint firstItem="K9b-QF-FyJ" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="11" id="TdO-Rf-K6S"/>
                             <constraint firstItem="76O-Pu-GZV" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="11" id="W0q-4h-crX"/>
                             <constraint firstItem="EiA-RL-gC4" firstAttribute="top" secondItem="nyy-QL-AVC" secondAttribute="bottom" constant="8" id="Xed-SW-GAY"/>
                             <constraint firstItem="bvg-u3-gES" firstAttribute="top" secondItem="CCs-ct-ctB" secondAttribute="bottom" constant="16" id="Xlo-Jb-ygr"/>
-                            <constraint firstItem="X1k-dP-DIH" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="45" id="Ymq-RB-muk"/>
                             <constraint firstItem="nyy-QL-AVC" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="13" id="YuZ-Sn-4yT"/>
                             <constraint firstItem="KZY-D0-r36" firstAttribute="leading" secondItem="eLK-xR-vr6" secondAttribute="trailing" constant="32" id="ZJp-ph-Zp5"/>
                             <constraint firstItem="iVp-WC-nSa" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="11" id="aUU-zR-eLG"/>
@@ -426,7 +426,6 @@
                             <constraint firstItem="T1a-oZ-eUE" firstAttribute="trailing" secondItem="KZY-D0-r36" secondAttribute="trailing" constant="82" id="jrz-Q2-wpu"/>
                             <constraint firstItem="J4g-7C-F66" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="13" id="kdK-33-e9L"/>
                             <constraint firstItem="WVt-ZM-teC" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="13" id="kx5-oL-7c3"/>
-                            <constraint firstItem="T1a-oZ-eUE" firstAttribute="trailing" secondItem="X1k-dP-DIH" secondAttribute="trailing" constant="12" id="mcL-vX-Td9"/>
                             <constraint firstItem="Hq5-JP-DNV" firstAttribute="leading" secondItem="T1a-oZ-eUE" secondAttribute="leading" constant="20" id="pFl-wt-O3s"/>
                             <constraint firstItem="T1a-oZ-eUE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yPy-Aa-XhB" secondAttribute="trailing" constant="12" id="pqO-df-XiK"/>
                             <constraint firstItem="bvg-u3-gES" firstAttribute="leading" secondItem="nyy-QL-AVC" secondAttribute="trailing" constant="8" id="tRj-Ec-50H"/>
