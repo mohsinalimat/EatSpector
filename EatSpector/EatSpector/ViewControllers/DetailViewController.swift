@@ -124,8 +124,6 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
         }
         print("Uber button pressed.")
     }
-    
-    
     /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      
      let trailerViewController = segue.destination as! SeamLessViewController

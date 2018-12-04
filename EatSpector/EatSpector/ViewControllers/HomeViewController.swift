@@ -50,6 +50,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
+    //set up navigation bar
     func setupNavBar(){
         navigationController?.navigationBar.prefersLargeTitles = true;
         let searchController = UISearchController(searchResultsController: nil);
@@ -57,6 +58,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         searchController.delegate = self as? UISearchControllerDelegate;
         navigationItem.hidesSearchBarWhenScrolling = false;
     }
+    
     //count business
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searching{
@@ -71,21 +73,19 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "BusinessCell", for: indexPath) as! BusinessCell
+        //code to change color of selected cell background
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.orange
         cell.selectedBackgroundView = backgroundView
         cell.contentView.backgroundColor = UIColor.red
+        //code to set the cell background
         let whiteRoundedView : UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 175))
-        
-        
         whiteRoundedView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 0.9])
         whiteRoundedView.layer.masksToBounds = false
         whiteRoundedView.layer.cornerRadius = 2.0
         whiteRoundedView.layer.shadowOffset = CGSize(width: -1, height: 1)
         whiteRoundedView.layer.shadowOpacity = 0.2
-        
         cell.contentView.addSubview(whiteRoundedView)
         cell.contentView.sendSubviewToBack(whiteRoundedView)
         if searchInput.count != 0
@@ -104,7 +104,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         BusinessAPIManager().getBusinesses { (businesses: [Business]?, error: Error?) in
             if let businesses = businesses {
                 self.businesses = businesses
-                //elf.filteredMovie = movies
                 self.tableView.reloadData()
                 //self.activityIndicator.stopAnimating()
                 //self.refreshControl.endRefreshing()
@@ -120,10 +119,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
-    
+    //search bar function
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        
         searchInput = businesses.filter({ (Business) -> Bool in
             guard searchBar.text != nil else { return false;}
             return Business.name.lowercased().contains(searchText.lowercased())
@@ -131,6 +128,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         searching = true;
         tableView.reloadData();
     }
+    
+    //search bar cancel function
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false;
         searchInput = []
@@ -148,6 +147,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             detailViewController.business = business
         }
     }
+    
+    //logout function
     @IBAction func OnLogout(_ sender: Any) {
         
         let firebaseAuth = Auth.auth()
@@ -161,6 +162,5 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.present(newViewController, animated: true, completion: nil)
         
     }
-    
-    
+  
 }
