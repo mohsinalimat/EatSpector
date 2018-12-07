@@ -111,21 +111,19 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
                 UIApplication.shared.open(url, options: [:])
             }*/
             
-            if UIApplication.shared.canOpenURL(URL(string: "uber://")!) {
+            if UIApplication.shared.canOpenURL(URL(string: "lyft://")!) {
                 // Uber is installed. Launch Uber and start navigation
-                let urlStr = String(format: "uber://")
+                let urlStr = String(format: "lyft://")
                 UIApplication.shared.open(URL(string: urlStr)!)
 
                 //UIApplication.shared.openURL(URL(string: urlStr)!)
             } else {
-                // if Uber is not installed. Launch AppStore to install Uber app
-                UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/id368677368")!)
+                // if Lyft is not installed
+                UIApplication.shared.open(URL(string: "http://ride.lyft.com")!)
             }
         }
         print("Uber button pressed.")
     }
-    
-    
     /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      
      let trailerViewController = segue.destination as! SeamLessViewController

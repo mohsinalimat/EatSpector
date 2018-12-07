@@ -12,6 +12,10 @@ import FirebaseAuth
 
 class SuggestViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+
+    
     var handle: AuthStateDidChangeListenerHandle?
 
     open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -19,6 +23,7 @@ class SuggestViewController: UIViewController {
     }
     
     @IBOutlet weak var ImageView: ImageSlideshow!
+    
     let localSource = [ImageSource(imageString: "hd-201401-r-sausage-and-broccoli-rabe-with-polenta")!, ImageSource(imageString: "beef-noodle-soup-8")!, ImageSource(imageString: "1371606132101")!, ImageSource(imageString: "182_3_9296_jpeg_ad23f8cb-854b-41ea-85b6-e1afd54da69a")!]
  //   let afNetworkingSource = [AFURLSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, AFURLSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, AFURLSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
 //    let alamofireSource = [AlamofireSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, AlamofireSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, AlamofireSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
@@ -49,7 +54,10 @@ class SuggestViewController: UIViewController {
         ImageView.addGestureRecognizer(recognizer)
         // Do any additional setup after loading the view.
     }
+
     
+    
+    //fullscreen images
     @objc func didTap() {
         let fullScreenController = ImageView.presentFullScreenController(from: self)
         // set the activity indicator for full screen controller (skipping the line will show no activity indicator)
@@ -69,7 +77,7 @@ class SuggestViewController: UIViewController {
         self.present(newViewController, animated: true, completion: nil)
 
     }
-    
+  
     /*
     // MARK: - Navigation
 
